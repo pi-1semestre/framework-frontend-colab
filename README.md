@@ -10,11 +10,11 @@ As entregas deverão ser:
 
 | Projeto | Framework/Tecnologia | Responsável | Animação |
 |---------|----------------------|-------------|----------|
-| Projeto 01 | React | Pedro | Hora de Aventura |
-| Projeto 02 | Vue | Gustavo | O Incrível Mundo de Gumball |
-| Projeto 03 | Angular | Max | Historietas Assombradas para Crianças Malcriadas |
-| Projeto 04 | Next.js | Jeniffer | Steven Universo |
-| Projeto 05 | Cópia de um projeto a partir de um repositório | Felipe | Cartoon Network completo |
+| Projeto 01 | React | Pedro Carmo| Hora de Aventura |
+| Projeto 02 | Vue | Gustavo Leme| O Incrível Mundo de Gumball |
+| Projeto 03 | Angular | Juliana Silva | Historietas Assombradas para Crianças Malcriadas |
+| Projeto 04 | Next.js | Jeniffer Oliveira| Steven Universo |
+| Projeto 05 | Cópia de um projeto a partir de um repositório | Felipe Camargo| Cartoon Network completo |
 
 ## Como usar
 
