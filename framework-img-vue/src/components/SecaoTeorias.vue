@@ -21,7 +21,7 @@ const theories: Theory[] = [
 </script>
 
 <template>
-  <section id="teorias" class="bg-vacuum-purple py-16 text-elmore-bg">
+  <section id="teorias" class="scroll-mt-20 bg-vacuum-purple py-20 text-elmore-bg">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <p class="mb-2 text-xs font-bold uppercase tracking-widest text-banana-yellow">

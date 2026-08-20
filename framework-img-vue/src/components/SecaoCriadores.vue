@@ -35,7 +35,7 @@ const accentBg: Record<Creator['accent'], string> = {
 </script>
 
 <template>
-  <section id="criadores" class="bg-elmore-bg py-16">
+  <section id="criadores" class="scroll-mt-20 bg-elmore-bg py-20">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <h2 class="font-display text-3xl font-bold text-vacuum-purple sm:text-4xl">

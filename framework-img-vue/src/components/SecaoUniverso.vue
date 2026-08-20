@@ -15,7 +15,7 @@ const places: Place[] = [
 </script>
 
 <template>
-  <section id="universo" class="bg-elmore-bg py-16">
+  <section id="universo" class="scroll-mt-20 bg-elmore-bg py-20">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <h2 class="font-display text-3xl font-bold text-vacuum-purple sm:text-4xl">
@@ -33,7 +33,7 @@ const places: Place[] = [
           v-for="place in places"
           :key="place.name"
           class="flex flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-md transition-shadow duration-200 hover:shadow-xl"
-          :class="place.isVacuum ? 'bg-vacuum-purple text-elmore-bg shadow-2xl ring-2 ring-banana-yellow' : ''"
+          :class="place.isVacuum ? 'border-banana-yellow bg-vacuum-purple text-banana-yellow shadow-2xl' : ''"
         >
           <h3
             class="mb-2 font-display text-xl font-bold"
@@ -43,7 +43,7 @@ const places: Place[] = [
           </h3>
           <p
             class="text-sm leading-relaxed"
-            :class="place.isVacuum ? 'text-elmore-bg/90' : 'text-dark-text/80'"
+            :class="place.isVacuum ? 'text-gray-200' : 'text-dark-text/80'"
           >
             {{ place.description }}
           </p>

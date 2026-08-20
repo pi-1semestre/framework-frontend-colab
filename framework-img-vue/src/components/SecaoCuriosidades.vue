@@ -35,7 +35,7 @@ const facts: Trivia[] = [
 </script>
 
 <template>
-  <section id="curiosidades" class="bg-white py-16">
+  <section id="curiosidades" class="scroll-mt-20 bg-white py-20">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <h2 class="font-display text-3xl font-bold text-vacuum-purple sm:text-4xl">
@@ -50,7 +50,7 @@ const facts: Trivia[] = [
         <article
           v-for="fact in facts"
           :key="fact.title"
-          class="flex flex-col rounded-2xl border border-black/5 bg-elmore-bg p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          class="flex flex-col rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <div
             class="mb-4 flex h-14 w-14 items-center justify-center rounded-full text-2xl"

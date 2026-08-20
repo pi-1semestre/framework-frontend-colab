@@ -12,7 +12,7 @@ const blocks = [
     icon: '🌀',
     title: 'Sinopse',
     accent: 'darwin-orange',
-    text: 'Acompanhe as aventuras caóticas de Gumball (um gato azul) e Darwin (um peixe com pernas) na peculiar cidade de Elmore.',
+    text: 'Em meio ao caos absoluto de Elmore, o sarcástico gato azul Gumball e seu inseparável irmão peixe-com-pernas, Darwin, transformam qualquer dilema cotidiano na aventura mais surreal, imprevisível e desastrosa do ensino fundamental.',
   },
   {
     id: 'origem',
@@ -25,14 +25,14 @@ const blocks = [
 </script>
 
 <template>
-  <section id="sinopse" class="bg-elmore-bg py-16">
+  <section id="sinopse" class="scroll-mt-20 bg-elmore-bg py-20">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <h2 class="font-display text-3xl font-bold text-vacuum-purple sm:text-4xl">
           Conhecendo a Obra
         </h2>
         <p class="mt-2 text-sm font-medium text-dark-text/70">
-          Um resumo sobre o que torna Elmore tão única.
+          Um resumo sobre o que torna Elmore tão único.
         </p>
       </header>
 

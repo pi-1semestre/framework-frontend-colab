@@ -15,7 +15,7 @@ const composers = ['Ben Locket', 'Neil Myers']
 </script>
 
 <template>
-  <section id="trilha" class="bg-white py-16">
+  <section id="trilha" class="scroll-mt-20 bg-white py-20">
     <div class="mx-auto max-w-6xl px-4">
       <header class="mb-10 text-center">
         <h2 class="font-display text-3xl font-bold text-vacuum-purple sm:text-4xl">

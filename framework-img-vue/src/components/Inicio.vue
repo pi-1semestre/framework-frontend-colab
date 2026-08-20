@@ -8,7 +8,7 @@ const ctaLinks = [
 <template>
   <section
     id="inicio"
-    class="relative overflow-hidden bg-gradient-to-br from-gumball-blue via-gumball-blue to-vacuum-purple"
+    class="relative scroll-mt-20 overflow-hidden bg-gradient-to-br from-gumball-blue via-gumball-blue to-vacuum-purple py-20"
   >
     <div class="mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 py-16 sm:py-20 lg:flex-row lg:items-center lg:gap-12">
       <div class="flex-1 text-center lg:text-left">
@@ -39,16 +39,15 @@ const ctaLinks = [
         </div>
       </div>
 
-      <div class="flex-1 w-full">
+      <div class="w-full">
         <div
-          class="flex aspect-video w-full items-center justify-center rounded-2xl border-4 border-banana-yellow bg-white/10 shadow-2xl backdrop-blur-sm"
+          class="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border-4 border-banana-yellow bg-white/10 shadow-2xl backdrop-blur-sm"
         >
-          <div class="px-6 text-center">
-            <span class="font-display text-5xl" aria-hidden="true">🐱🐟</span>
-            <p class="mt-3 text-sm font-semibold text-white/90">
-              [ Imagem: Gumball e Darwin correndo pelo corredor da Elmore High ]
-            </p>
-          </div>
+          <img
+            src="/hero-gumball.jpg"
+            alt="Gumball e Darwin correndo pelo corredor da Elmore High"
+            class="h-full w-full object-cover"
+          />
         </div>
       </div>
     </div>
