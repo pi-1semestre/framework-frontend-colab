@@ -8,11 +8,11 @@ As entregas deverão ser:
 
 | Projeto | Framework/Tecnologia | Responsável |
 |---------|----------------------|-------------|
-| Projeto 01 | React | Pedro |
-| Projeto 02 | Vue | Gustavo |
-| Projeto 03 | Angular | Max |
-| Projeto 04 | Next.js | Jeniffer |
-| Projeto 05 | git clone de um projeto do GitHub | Felipe |
+| Projeto 01 | React | Pedro Carmo |
+| Projeto 02 | Vue | Gustavo Castro|
+| Projeto 03 | Angular | Juliana Silva|
+| Projeto 04 | Next.js | Jeniffer Oliveira|
+| Projeto 05 | git clone de um projeto do GitHub | Felipe Ramalho|
 
 ## Como usar
 
