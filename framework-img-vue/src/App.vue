@@ -4,6 +4,9 @@ import Footer from './components/Footer.vue'
 import HeroBanner from './components/HeroBanner.vue'
 import Synopsis from './components/Synopsis.vue'
 import CharactersSection from './components/CharactersSection.vue'
+import WorldSection from './components/WorldSection.vue'
+import SoundtrackSection from './components/SoundtrackSection.vue'
+import CreatorsSection from './components/CreatorsSection.vue'
 </script>
 
 <template>
@@ -14,6 +17,9 @@ import CharactersSection from './components/CharactersSection.vue'
       <HeroBanner />
       <Synopsis />
       <CharactersSection />
+      <WorldSection />
+      <SoundtrackSection />
+      <CreatorsSection />
     </main>
 
     <Footer />
