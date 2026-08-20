@@ -1,41 +1,41 @@
 # framework-img-vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Este modelo ajuda você a começar a desenvolver com Vue 3 e Vite.
 
-## Recommended IDE Setup
+## Configuração Recomendada da IDE
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (desative o Vetur).
 
-## Recommended Browser Setup
+## Configuração Recomendada do Navegador
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+- Navegadores baseados em Chromium (Chrome, Edge, Brave, etc.):
   - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+  - [Ativar Formatador de Objetos Personalizado no Chrome DevTools](http://bit.ly/object-formatters)
 - Firefox:
   - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+  - [Ativar Formatador de Objetos Personalizado no Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Type Support for `.vue` Imports in TS
+## Suporte a Tipos para Imports `.vue` em TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+O TypeScript não consegue lidar com informações de tipo para imports `.vue` por padrão, então substituímos a CLI `tsc` por `vue-tsc` para a verificação de tipos. Nos editores, precisamos do [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) para que o serviço de linguagem do TypeScript reconheça os tipos `.vue`.
 
-## Customize configuration
+## Personalizar a Configuração
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Veja a [Referência de Configuração do Vite](https://vite.dev/config/).
 
-## Project Setup
+## Configuração do Projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compilar e Recarregar a Quente para Desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Verificar Tipos, Compilar e Minificar para Produção
 
 ```sh
 npm run build
