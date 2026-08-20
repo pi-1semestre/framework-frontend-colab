@@ -3,6 +3,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import HeroBanner from './components/HeroBanner.vue'
 import Synopsis from './components/Synopsis.vue'
+import CharactersSection from './components/CharactersSection.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Synopsis from './components/Synopsis.vue'
     <main class="mx-auto w-full max-w-6xl flex-1 px-4">
       <HeroBanner />
       <Synopsis />
+      <CharactersSection />
     </main>
 
     <Footer />
