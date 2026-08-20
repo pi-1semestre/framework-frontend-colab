@@ -13,17 +13,15 @@ import Product from '../components/Product';
 
 const App = () => {
   return (
-    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      <div className={`relative bg-background`}>
+    <div className="bg-background grid gap-y-16 overflow-hidden">
+      <div className="relative bg-primary border-b-4 border-border">
         <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-          >
-            <Header />
+          <Header />
+          <div className="grid items-center gap-10 px-4 pb-14 pt-10 sm:px-6 sm:pb-20 lg:grid-cols-2 lg:gap-14 lg:px-8 lg:pb-24 lg:pt-16">
             <MainHero />
+            <MainHeroImage />
           </div>
         </div>
-        <MainHeroImage />
       </div>
       <Canvas />
       <LazyShow>

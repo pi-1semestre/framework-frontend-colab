@@ -2,22 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --color-primary: #ec4755;
-  --color-secondary: #a12c34;
-  --color-tertiaty: #99a0a3;
+  --color-primary: #ffea00;
+  --color-secondary: #ff4f87;
+  --color-tertiary: #37d5d3;
+  --color-ink: #111111;
+  --color-paper: #fffdf5;
 }
 
-a { 
-  @apply text-red-700;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
 }
 
 a:hover {
-  @apply border-b-2 border-red-700;
+  text-decoration: none;
 }
 
-
+::selection {
+  background: var(--color-secondary);
+  color: #ffffff;
+}
 
 .content p {
   @apply my-6;

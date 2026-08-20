@@ -1,6 +1,7 @@
 export const AppConfig = {
-  site_name: 'React landing page',
-  title: 'React landing page template 2021',
-  description: 'Production ready plug n play landing page!',
-  locale: 'en',
+  site_name: "Cartoon Front-end",
+  title: "Cartoon Front-end | Projetos em Vue, Angular, React e Next.js",
+  description:
+    "Uma coleção de projetos front-end inspirados em desenhos da Cartoon Network.",
+  locale: "pt-BR",
 };

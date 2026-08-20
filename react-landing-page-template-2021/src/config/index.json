@@ -1,43 +1,43 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Cartoon Front-end",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Projetos",
       "href": "product"
     },
     {
-      "name": "Features",
+      "name": "Frameworks",
       "href": "features"
     },
-
     {
-      "name": "Pricing",
+      "name": "Jornada",
       "href": "pricing"
     },
     {
-      "name": "About",
+      "name": "Sobre",
       "href": "about"
     }
   ],
   "callToAction": {
-    "text": "Get started",
-    "href": "#"
+    "text": "Explorar projetos",
+    "href": "#product"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "eyebrow": "4 desenhos • 4 frameworks • 1 coleção",
+    "title": "Cartoon Network",
+    "subtitle": "em código.",
+    "description": "Uma coleção de projetos front-end inspirados em quatro universos inesquecíveis: Gumball, Historietas Assombradas, Hora de Aventura e Steven Universo.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Conheça os projetos",
+      "href": "#product"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "text": "Ver no GitHub",
+      "href": "https://github.com/pi-1semestre/framework-frontend-colab"
     }
   },
   "product": {
