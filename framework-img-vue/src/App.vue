@@ -7,6 +7,8 @@ import CharactersSection from './components/CharactersSection.vue'
 import WorldSection from './components/WorldSection.vue'
 import SoundtrackSection from './components/SoundtrackSection.vue'
 import CreatorsSection from './components/CreatorsSection.vue'
+import TriviaSection from './components/TriviaSection.vue'
+import TheoriesSection from './components/TheoriesSection.vue'
 </script>
 
 <template>
@@ -20,6 +22,8 @@ import CreatorsSection from './components/CreatorsSection.vue'
       <WorldSection />
       <SoundtrackSection />
       <CreatorsSection />
+      <TriviaSection />
+      <TheoriesSection />
     </main>
 
     <Footer />
