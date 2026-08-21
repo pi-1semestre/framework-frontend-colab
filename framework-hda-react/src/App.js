@@ -151,22 +151,6 @@ function App() {
 
         </div>
 
-        <div className="hero-character">
-
-          <div className="sun">☀️</div>
-
-          <div className="hero-card">
-            <div className="hero-finn">
-              ⚔️
-            </div>
-
-            <div className="hero-jake">
-              🐶
-            </div>
-          </div>
-
-        </div>
-
       </section>
 
       {/* SOBRE */}
