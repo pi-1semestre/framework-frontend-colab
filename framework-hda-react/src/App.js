@@ -1,5 +1,14 @@
 import React, { useState } from "react";
 import "./App.css";
+import finnImg from "./assets/finn-icon.png";
+import jakeImg from "./assets/jake-icon.png";
+import marcelineImg from "./assets/marceline-icon.png";  
+import jujubaImg from "./assets/jujuba-icon.png";
+import bmoImg from "./assets/bmo-icon.png";
+import fogoImg from "./assets/princesa-de-fogo-icon.png";
+import reiGeladoImg from "./assets/rei-gelado-icon.png";
+import lemongrabImg from "./assets/lemongrab-icon.png";
+import golbImg from "./assets/golb-icon.png";
 
 const personagens = [
   {
@@ -226,8 +235,7 @@ function App() {
 
       </section>
 
-      {/* PERSONAGENS */}
-      {/* PERSONAGENS */}
+{/* PERSONAGENS */}
 <section id="personagens" className="characters-section">
 
   <div className="characters-container">
@@ -286,7 +294,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/470-4709860_original-finn-character-adventure-time.png"
+              src={finnImg}
               alt="Finn, personagem de Hora de Aventura"
             />
 
@@ -321,7 +329,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/246-2469158_png-adventure-time-jake.png"
+              src={jakeImg}
               alt="Jake, personagem de Hora de Aventura"
             />
 
@@ -385,7 +393,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/989-9897154_adventure-time-stickers-marceline.png"
+              src={marcelineImg}
               alt="Marceline, personagem de Hora de Aventura"
             />
 
@@ -420,8 +428,8 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/233-2335727_adventure-time-princess-bubblegum.png"
-              alt="Princesa Jujuba"
+              src={jujubaImg}
+              alt="Princesa Jujuba, personagem de Hora de Aventura" 
             />
 
           </div>
@@ -455,7 +463,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/225-2253569_adventure-time-bmo-adventure-time-bimo.png"
+              src={bmoImg}
               alt="BMO, personagem de Hora de Aventura"
             />
 
@@ -490,7 +498,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkey.com/png/detail/219-2190277_adventure-time-flame-princess.png"
+              src={fogoImg}
               alt="Princesa de Fogo"
             />
 
@@ -554,7 +562,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.pngkit.com/png/detail/219-2190065_image-icekingspecialeyes-wiki-fandom-hora-de-aventura-rey.png"
+              src={reiGeladoImg}
               alt="Rei Gelado"
             />
 
@@ -589,7 +597,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://www.kindpng.com/picc/m/153-1532943_adventure-time-lemongrab-png-transparent-png.png"
+              src={lemongrabImg}
               alt="Lemongrab"
             />
 
@@ -624,7 +632,7 @@ function App() {
           <div className="character-image">
 
             <img
-              src="https://image.pngaaa.com/922/3423922-middle.png"
+              src={golbImg}
               alt="GOLB"
             />
 
