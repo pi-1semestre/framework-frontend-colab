@@ -16,7 +16,16 @@ const tracks = [
 function Star() { return <span className="star" aria-hidden="true">★</span>; }
 
 function ImageSlot({ label, path, className = "" }: { label: string; path: string; className?: string }) {
-  return <div className={`image-slot ${className}`} aria-label={`Espaço para imagem: ${label}`}><span>▧</span><strong>{label}</strong><small>{path}</small></div>;
+  const normalized = `${label} ${path}`.toLowerCase();
+  let position = "0% 0%";
+  let fullSheet = false;
+
+  if (normalized.includes("garnet") || normalized.includes("peridot") || normalized.includes("momento-2")) position = "100% 0%";
+  if (normalized.includes("pérola") || normalized.includes("lapis") || normalized.includes("lápis") || normalized.includes("momento-3")) position = "0% 100%";
+  if (normalized.includes("ametista") || normalized.includes("momento-4")) position = "100% 100%";
+  if (normalized.includes("grupo") || normalized.includes("banner") || normalized.includes("mapa") || normalized.includes("album")) fullSheet = true;
+
+  return <div className={`image-slot image-ready ${fullSheet ? "full-sheet" : ""} ${className}`} role="img" aria-label={label} title={`${label} — ${path}`} style={{ backgroundPosition: position }}/>;
 }
 
 function SectionTitle({ icon, title, action }: { icon: string; title: string; action?: string }) {
