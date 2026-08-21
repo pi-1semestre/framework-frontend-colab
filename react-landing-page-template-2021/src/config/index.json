@@ -50,21 +50,21 @@
         "title": "O Incrível Mundo de Gumball",
         "framework": "Vue",
         "description": "Uma experiência colorida inspirada em Elmore, construída com componentes Vue.",
-        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-vue/framework-img-vue"
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-img-vue"
       },
       {
         "number": "02",
         "title": "Historietas Assombradas",
         "framework": "Angular",
         "description": "O universo sobrenatural de Pepe e seus amigos organizado com a estrutura do Angular.",
-        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-template/framework-hapcmc-angular"
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-hapcmc-angular"
       },
       {
         "number": "03",
         "title": "Hora de Aventura",
         "framework": "React",
         "description": "Uma viagem pela Terra de Ooo desenvolvida com componentes e estados do React.",
-        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-react/framework-hda-react"
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-hda-react"
       },
       {
         "number": "04",
@@ -189,7 +189,7 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
+      "github": "https://github.com/pi-1semestre/framework-frontend-colab",
       "twitter": "https://twitter.com/issaafkattan",
       "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
     }
