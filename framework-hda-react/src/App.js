@@ -9,6 +9,7 @@ import fogoImg from "./assets/princesa-de-fogo-icon.png";
 import reiGeladoImg from "./assets/rei-gelado-icon.png";
 import lemongrabImg from "./assets/lemongrab-icon.png";
 import golbImg from "./assets/golb-icon.png";
+import pendletonImg from "./assets/pendleton.jpg";
 
 const personagens = [
   {
@@ -56,7 +57,7 @@ const curiosidades = [
     titulo: "A Terra de Ooo",
     emoji: "🌎",
     texto:
-      "A história acontece na Terra de Ooo, um mundo fantástico com vários reinos, criaturas mágicas e lugares misteriosos.",
+      "A história acontece na Terra de Ooo, um mundo fantástico com vários reinos, criaturas mágicas e lugares misteriosos. Apesar de não aparentar, sua origem é bem mais sombria do que parece...",
   },
   {
     titulo: "Temas profundos",
@@ -720,7 +721,7 @@ function App() {
       >
 
         <div className="criador-ilustracao">
-          ✏️
+          <img src={pendletonImg} alt="Pendleton Ward, criador de Hora de Aventura" />
         </div>
 
         <div className="criador-texto">

@@ -1098,7 +1098,12 @@ button {
   padding-left: max(20px, calc((100% - 1200px) / 2));
   padding-right: max(20px, calc((100% - 1200px) / 2));
 
-  background: white;
+  background: linear-gradient(rgba(256,256,256,0.5), rgba(256,256,256,0.5)),
+              url('./assets/ooo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 .curiosidade-grid {
@@ -1204,9 +1209,9 @@ button {
   color: white;
 }
 
-.criador-ilustracao {
-  width: 330px;
-  height: 330px;
+.criador-ilustracao img{
+  max-width: 50vw;
+  max-height: 50vh;
 
   margin: auto;
 
