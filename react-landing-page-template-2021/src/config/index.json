@@ -14,7 +14,7 @@
     },
     {
       "name": "Jornada",
-      "href": "pricing"
+      "href": "journey"
     },
     {
       "name": "Sobre",
@@ -130,42 +130,38 @@
       }
     ]
   },
-  "pricing": {
-    "title": "Pricing",
+  "journey": {
+    "eyebrow": "Da ideia ao GitHub",
+    "title": "Como a coleção ganhou forma",
+    "description": "A atividade foi construída em etapas para que cada decisão visual também se transformasse em prática de desenvolvimento front-end.",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
-        "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
-        ]
+        "number": "01",
+        "label": "Conceito",
+        "title": "Escolha dos universos",
+        "description": "Quatro desenhos foram associados às tecnologias de acordo com a personalidade visual de cada projeto.",
+        "result": "Tema e direção visual"
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
-
-        "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
+        "number": "02",
+        "label": "Estrutura",
+        "title": "Organização dos projetos",
+        "description": "Cada aplicação recebeu componentes, estilos e arquivos organizados conforme as convenções do seu framework.",
+        "result": "Arquiteturas independentes"
       },
       {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
-        "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
-        ]
+        "number": "03",
+        "label": "Implementação",
+        "title": "Interfaces em componentes",
+        "description": "Telas, seções e interações foram construídas explorando reutilização, estado e responsividade.",
+        "result": "Quatro experiências web"
+      },
+      {
+        "number": "04",
+        "label": "Publicação",
+        "title": "Código compartilhado",
+        "description": "Branches e pastas próprias mantêm os projetos acessíveis para consulta, comparação e evolução no GitHub.",
+        "result": "Uma coleção colaborativa"
       }
     ]
   },
