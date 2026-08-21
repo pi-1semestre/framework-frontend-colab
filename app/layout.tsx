@@ -13,17 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steven Universe — Fan Site",
-  description: "Explore personagens, músicas e momentos do universo de Steven.",
+  title: "Steven Universo — Portal Interativo",
+  description: "Explore personagens, músicas, lugares, teorias e monte sua própria equipe de Crystal Gems.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
