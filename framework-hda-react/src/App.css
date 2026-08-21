@@ -140,6 +140,7 @@ button {
 
 .hero {
   min-height: 850px;
+  max-height: 100vh;
 
   position: relative;
 
@@ -157,10 +158,10 @@ button {
   background-image:
     linear-gradient(
       90deg,
-      rgba(255, 245, 220, 0.92) 0%,
-      rgba(255, 245, 220, 0.72) 38%,
-      rgba(255, 245, 220, 0.12) 72%,
-      rgba(255, 245, 220, 0.05) 100%
+      rgba(255, 245, 220, 0.75),
+      rgba(255, 245, 220, 0.50),
+      rgba(255, 245, 220, 0.10),
+      rgba(255, 245, 220, 0.05)
     ),
     url("./assets/hero-bg.jpg");
 
@@ -554,138 +555,537 @@ button {
    PERSONAGENS
 ===================================================== */
 
-.personagens {
+.characters-section {
   width: 100%;
+  padding: 130px 0 150px;
 
-  max-width: none;
-
-  padding-left: max(20px, calc((100% - 1200px) / 2));
-  padding-right: max(20px, calc((100% - 1200px) / 2));
-
-  background: #f1faff;
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(86, 199, 233, 0.12),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(255, 120, 165, 0.12),
+      transparent 25%
+    ),
+    #f2faff;
 }
 
-.personagem-grid {
-  display: grid;
+.characters-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: auto;
+}
 
-  grid-template-columns: repeat(4, 1fr);
+/* CABEÇALHO */
+
+.characters-header {
+  margin-bottom: 85px;
+}
+
+.characters-header h2 span {
+  color: var(--blue);
+}
+
+.characters-header p {
+  max-width: 600px;
+
+  margin-top: 20px;
+
+  color: var(--muted);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   CATEGORIAS
+===================================================== */
+
+.character-category {
+  margin-bottom: 100px;
+}
+
+.category-title {
+  display: flex;
+
+  align-items: center;
 
   gap: 20px;
+
+  margin-bottom: 35px;
 }
 
-.personagem-card {
-  min-height: 360px;
+.category-icon {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 20px;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 8px 20px rgba(21, 59, 89, 0.08);
+}
+
+.protagonist-icon {
+  background: #dff7ff;
+}
+
+.secondary-icon {
+  background: #fff0f7;
+}
+
+.villain-icon {
+  background: #eeeaff;
+}
+
+.category-title span {
+  display: block;
+
+  color: var(--pink);
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.category-title h3 {
+  margin-top: 2px;
+
+  font-family: "Baloo 2";
+
+  color: var(--blue-dark);
+
+  font-size: 32px;
+
+  line-height: 1;
+}
+
+.category-title p {
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.character-grid {
+  display: grid;
+
+  gap: 22px;
+}
+
+.protagonist-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.secondary-grid,
+.villain-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.character-card {
+  min-height: 460px;
 
   position: relative;
 
-  padding: 30px;
+  overflow: hidden;
 
   border-radius: 30px;
 
-  border: 3px solid var(--blue-dark);
+  background: white;
 
-  box-shadow: 0 9px 0 var(--blue-dark);
+  border: 1px solid rgba(21, 59, 89, 0.08);
+
+  box-shadow:
+    0 15px 45px rgba(21, 59, 89, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 
   cursor: pointer;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 25px 60px rgba(21, 59, 89, 0.16);
+}
+
+
+/* =====================================================
+   IMAGEM
+===================================================== */
+
+.character-image {
+  height: 285px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
 
   overflow: hidden;
 
-  transition: 0.25s ease;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.8)
+    );
 }
 
-.personagem-card:hover {
-  transform: translateY(-10px);
-}
-
-.personagem-card::before {
+.character-image::before {
   content: "";
 
   position: absolute;
 
-  width: 170px;
-  height: 170px;
+  width: 220px;
+  height: 220px;
+
+  bottom: -80px;
 
   border-radius: 50%;
 
-  right: -70px;
-  top: -70px;
-
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.45);
 }
 
-.personagem-emoji {
-  font-size: 75px;
-
+.character-image img {
   position: relative;
 
-  margin-top: 10px;
+  z-index: 2;
 
-  transition: 0.25s ease;
+  width: 80%;
+  height: 95%;
+
+  object-fit: contain;
+
+  object-position: center bottom;
+
+  transition:
+    transform 0.4s ease;
 }
 
-.personagem-card:hover .personagem-emoji {
-  transform: scale(1.12) rotate(-5deg);
+.character-card:hover .character-image img {
+  transform:
+    translateY(-8px)
+    scale(1.06);
 }
 
-.personagem-card h3 {
-  margin-top: 25px;
+
+/* =====================================================
+   CORES INDIVIDUAIS
+===================================================== */
+
+.finn-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #b8edff,
+    #65cbed
+  );
+}
+
+.jake-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #ffe69a,
+    #f6c33e
+  );
+}
+
+.marceline-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #d8d0f7,
+    #9d8de4
+  );
+}
+
+.bubblegum-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #ffd5e8,
+    #ff91bd
+  );
+}
+
+.bmo-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #c9fff2,
+    #63cdb5
+  );
+}
+
+.flame-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #ffd0a6,
+    #ff765e
+  );
+}
+
+.ice-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #dff6ff,
+    #8dd5ee
+  );
+}
+
+.lemon-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #fffca8,
+    #e8df3e
+  );
+}
+
+.golb-card .character-image {
+  background: linear-gradient(
+    145deg,
+    #543044,
+    #1b1627
+  );
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+.character-content {
+  padding: 25px 27px 30px;
+}
+
+.character-tag {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 100px;
+
+  background: #eef8fc;
+
+  color: var(--blue-dark);
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.character-content h4 {
+  margin-top: 9px;
 
   font-family: "Baloo 2";
 
-  font-size: 34px;
+  color: var(--blue-dark);
+
+  font-size: 30px;
 
   line-height: 1;
-
-  color: var(--blue-dark);
 }
 
-.personagem-card > span {
-  display: block;
+.character-content p {
+  margin-top: 10px;
 
-  margin-top: 6px;
-
-  color: rgba(21, 59, 89, 0.65);
-
-  font-size: 11px;
-
-  text-transform: uppercase;
-
-  font-weight: 900;
-
-  letter-spacing: 0.5px;
-}
-
-.personagem-card p {
-  margin-top: 20px;
-
-  font-size: 13px;
-
-  line-height: 1.6;
-
-  color: var(--blue-dark);
-
-  font-weight: 700;
-}
-
-.personagem-card button {
-  position: absolute;
-
-  bottom: 22px;
-  left: 30px;
-
-  border: none;
-
-  background: transparent;
-
-  color: var(--blue-dark);
+  color: var(--muted);
 
   font-size: 12px;
 
-  font-weight: 900;
+  line-height: 1.6;
 
-  cursor: pointer;
+  font-weight: 600;
 }
 
+
+/* =====================================================
+   NÚMERO
+===================================================== */
+
+.character-number {
+  position: absolute;
+
+  top: 18px;
+  right: 20px;
+
+  font-family: "Baloo 2";
+
+  font-size: 22px;
+
+  color: rgba(21, 59, 89, 0.2);
+
+  font-weight: 900;
+
+  z-index: 5;
+}
+
+
+/* =====================================================
+   VILÕES
+===================================================== */
+
+.villains-category {
+  padding: 55px;
+
+  border-radius: 40px;
+
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(255,255,255,0.06),
+      transparent 25%
+    ),
+    #18283c;
+}
+
+.villains-category .category-title h3 {
+  color: white;
+}
+
+.villains-category .category-title p {
+  color: #91a6b5;
+}
+
+.villains-category .category-title span {
+  color: var(--yellow);
+}
+
+.villain-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.villains-category .character-card {
+  background: #24384d;
+
+  border-color: rgba(255,255,255,0.07);
+
+  box-shadow:
+    0 15px 45px rgba(0,0,0,0.2);
+}
+
+.villains-category .character-content h4 {
+  color: white;
+}
+
+.villains-category .character-content p {
+  color: #9eb0bd;
+}
+
+.villains-category .character-tag {
+  background: rgba(255,255,255,0.1);
+
+  color: #d9e8ef;
+}
+
+.villains-category .character-number {
+  color: rgba(255,255,255,0.2);
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .protagonist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secondary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .villain-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .characters-section {
+    padding: 90px 0 100px;
+  }
+
+  .characters-container {
+    width: calc(100% - 30px);
+  }
+
+  .characters-header {
+    margin-bottom: 60px;
+  }
+
+  .category-title {
+    align-items: flex-start;
+  }
+
+  .category-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 22px;
+  }
+
+  .category-title h3 {
+    font-size: 27px;
+  }
+
+  .protagonist-grid,
+  .secondary-grid,
+  .villain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .character-card {
+    min-height: 450px;
+  }
+
+  .character-image {
+    height: 290px;
+  }
+
+  .villains-category {
+    padding: 30px 18px;
+
+    border-radius: 30px;
+  }
+
+}
 /* =====================================================
    CURIOSIDADES
 ===================================================== */

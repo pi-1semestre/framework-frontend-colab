@@ -227,64 +227,437 @@ function App() {
       </section>
 
       {/* PERSONAGENS */}
-      <section
-        id="personagens"
-        className="section personagens"
-      >
+      {/* PERSONAGENS */}
+<section id="personagens" className="characters-section">
 
-        <div className="section-header">
+  <div className="characters-container">
 
-          <span>02</span>
+    {/* CABEÇALHO */}
+    <div className="section-header characters-header">
 
-          <div>
-            <small>OS HERÓIS DE OOO</small>
-            <h2>Personagens inesquecíveis</h2>
+      <span>02</span>
+
+      <div>
+        <small>OS HABITANTES DE OOO</small>
+
+        <h2>
+          Conheça os personagens
+          <br />
+          de <span>Hora de Aventura.</span>
+        </h2>
+
+        <p>
+          Heróis, amigos, princesas e criaturas que
+          tornam a Terra de Ooo um lugar único.
+        </p>
+      </div>
+
+    </div>
+
+
+    {/* ==================================================
+        PROTAGONISTAS
+    ================================================== */}
+
+    <div className="character-category">
+
+      <div className="category-title">
+
+        <div className="category-icon protagonist-icon">
+          ⚔️
+        </div>
+
+        <div>
+          <span>01</span>
+          <h3>Protagonistas</h3>
+          <p>
+            Os grandes aventureiros da Terra de Ooo.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div className="character-grid protagonist-grid">
+
+        {/* FINN */}
+        <article className="character-card finn-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/470-4709860_original-finn-character-adventure-time.png"
+              alt="Finn, personagem de Hora de Aventura"
+            />
+
           </div>
 
+          <div className="character-content">
+
+            <span className="character-tag">
+              HUMANO
+            </span>
+
+            <h4>Finn</h4>
+
+            <p>
+              Um jovem herói que percorre Ooo em busca
+              de aventuras e sempre tenta fazer o que é
+              certo.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            01
+          </div>
+
+        </article>
+
+
+        {/* JAKE */}
+        <article className="character-card jake-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/246-2469158_png-adventure-time-jake.png"
+              alt="Jake, personagem de Hora de Aventura"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              CÃO MÁGICO
+            </span>
+
+            <h4>Jake</h4>
+
+            <p>
+              Melhor amigo e irmão adotivo de Finn.
+              Seus poderes permitem que ele estique e
+              transforme seu corpo.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            02
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    {/* ==================================================
+        PERSONAGENS SECUNDÁRIOS
+    ================================================== */}
+
+    <div className="character-category">
+
+      <div className="category-title">
+
+        <div className="category-icon secondary-icon">
+          ✨
         </div>
 
-        <div className="personagem-grid">
-
-          {personagens.map((personagem) => (
-
-            <div
-              key={personagem.nome}
-              className="personagem-card"
-              style={{
-                backgroundColor: personagem.cor,
-              }}
-              onClick={() =>
-                mostrarPersonagem(personagem)
-              }
-            >
-
-              <div className="personagem-emoji">
-                {personagem.emoji}
-              </div>
-
-              <h3>{personagem.nome}</h3>
-
-              <span>{personagem.apelido}</span>
-
-              {personagemSelecionado === personagem.nome && (
-                <p>
-                  {personagem.descricao}
-                </p>
-              )}
-
-              <button>
-                {personagemSelecionado === personagem.nome
-                  ? "Fechar ↑"
-                  : "Saiba mais ↓"}
-              </button>
-
-            </div>
-
-          ))}
-
+        <div>
+          <span>02</span>
+          <h3>Personagens secundários</h3>
+          <p>
+            Amigos, aliados e figuras importantes de Ooo.
+          </p>
         </div>
 
-      </section>
+      </div>
+
+
+      <div className="character-grid secondary-grid">
+
+        {/* MARCELINE */}
+        <article className="character-card marceline-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/989-9897154_adventure-time-stickers-marceline.png"
+              alt="Marceline, personagem de Hora de Aventura"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              VAMPIRO
+            </span>
+
+            <h4>Marceline</h4>
+
+            <p>
+              A Rainha dos Vampiros é uma musicista
+              apaixonada por rock e uma das personagens
+              mais complexas da série.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            03
+          </div>
+
+        </article>
+
+
+        {/* PRINCESA JUJUBA */}
+        <article className="character-card bubblegum-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/233-2335727_adventure-time-princess-bubblegum.png"
+              alt="Princesa Jujuba"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              PRINCESA
+            </span>
+
+            <h4>Princesa Jujuba</h4>
+
+            <p>
+              Governante do Reino Doce, cientista
+              brilhante e uma das figuras mais importantes
+              da Terra de Ooo.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            04
+          </div>
+
+        </article>
+
+
+        {/* BMO */}
+        <article className="character-card bmo-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/225-2253569_adventure-time-bmo-adventure-time-bimo.png"
+              alt="BMO, personagem de Hora de Aventura"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              ROBÔ
+            </span>
+
+            <h4>BMO</h4>
+
+            <p>
+              Um pequeno videogame vivo que mora com
+              Finn e Jake e possui uma personalidade
+              inocente e divertida.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            05
+          </div>
+
+        </article>
+
+
+        {/* PRINCESA DE FOGO */}
+        <article className="character-card flame-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkey.com/png/detail/219-2190277_adventure-time-flame-princess.png"
+              alt="Princesa de Fogo"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              ELEMENTAL
+            </span>
+
+            <h4>Princesa de Fogo</h4>
+
+            <p>
+              Uma poderosa elemental de fogo e antiga
+              paixão de Finn, com uma personalidade
+              forte e independente.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            06
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    {/* ==================================================
+        VILÕES
+    ================================================== */}
+
+    <div className="character-category villains-category">
+
+      <div className="category-title">
+
+        <div className="category-icon villain-icon">
+          ☠️
+        </div>
+
+        <div>
+          <span>03</span>
+          <h3>Vilões</h3>
+          <p>
+            Aqueles que desafiam os heróis de Ooo.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div className="character-grid villain-grid">
+
+        {/* REI GELADO */}
+        <article className="character-card ice-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.pngkit.com/png/detail/219-2190065_image-icekingspecialeyes-wiki-fandom-hora-de-aventura-rey.png"
+              alt="Rei Gelado"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              REINO GELADO
+            </span>
+
+            <h4>Rei Gelado</h4>
+
+            <p>
+              Um antigo antagonista que usa uma coroa
+              mágica para controlar o gelo e possui uma
+              história muito mais triste do que parece.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            07
+          </div>
+
+        </article>
+
+
+        {/* LEMONGRAB */}
+        <article className="character-card lemon-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://www.kindpng.com/picc/m/153-1532943_adventure-time-lemongrab-png-transparent-png.png"
+              alt="Lemongrab"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              REINO LIMÃO
+            </span>
+
+            <h4>Lemongrab</h4>
+
+            <p>
+              Um dos personagens mais excêntricos de Ooo,
+              conhecido por seu comportamento exagerado
+              e pelo famoso "UNACCEPTABLE!".
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            08
+          </div>
+
+        </article>
+
+
+        {/* GOLB */}
+        <article className="character-card golb-card">
+
+          <div className="character-image">
+
+            <img
+              src="https://image.pngaaa.com/922/3423922-middle.png"
+              alt="GOLB"
+            />
+
+          </div>
+
+          <div className="character-content">
+
+            <span className="character-tag">
+              ENTIDADE CÓSMICA
+            </span>
+
+            <h4>GOLB</h4>
+
+            <p>
+              Uma entidade cósmica extremamente poderosa,
+              associada ao caos e à destruição.
+            </p>
+
+          </div>
+
+          <div className="character-number">
+            09
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* CURIOSIDADES */}
       <section
