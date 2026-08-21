@@ -41,17 +41,37 @@
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "eyebrow": "Projetos da coleção",
+    "title": "Quatro universos, quatro tecnologias",
+    "description": "Cada projeto transforma a identidade de um desenho em uma experiência web própria. Explore o código-fonte e compare como cada framework organiza a mesma proposta.",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/product1.jpg"
+        "number": "01",
+        "title": "O Incrível Mundo de Gumball",
+        "framework": "Vue",
+        "description": "Uma experiência colorida inspirada em Elmore, construída com componentes Vue.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-vue/framework-img-vue"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/product2.jpg"
+        "number": "02",
+        "title": "Historietas Assombradas",
+        "framework": "Angular",
+        "description": "O universo sobrenatural de Pepe e seus amigos organizado com a estrutura do Angular.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-template/framework-hapcmc-angular"
+      },
+      {
+        "number": "03",
+        "title": "Hora de Aventura",
+        "framework": "React",
+        "description": "Uma viagem pela Terra de Ooo desenvolvida com componentes e estados do React.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-react/framework-hda-react"
+      },
+      {
+        "number": "04",
+        "title": "Steven Universo",
+        "framework": "Next.js",
+        "description": "Uma página inspirada nas Crystal Gems utilizando os recursos do Next.js.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-next"
       }
     ]
   },
