@@ -76,29 +76,57 @@
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "eyebrow": "Por trás das telas",
+    "title": "Quatro maneiras de construir para a web",
+    "description": "A coleção também funciona como um estudo comparativo: o mesmo desafio de criar interfaces tem soluções e organizações diferentes em cada tecnologia.",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
+        "name": "Vue",
+        "logo": "/assets/images/vue.svg",
+        "role": "Framework progressivo",
+        "project": "O Incrível Mundo de Gumball",
+        "description": "Uma estrutura direta e flexível, com componentes de arquivo único que aproximam marcação, lógica e estilo.",
+        "topics": [
+          "Componentes reutilizáveis",
+          "Diretivas no template",
+          "Estado reativo"
+        ]
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
-        "icon": "/assets/images/tailwindcss.svg"
+        "name": "Angular",
+        "logo": "/assets/images/angular.png",
+        "role": "Plataforma completa",
+        "project": "Historietas Assombradas",
+        "description": "Uma abordagem estruturada que reúne componentes, injeção de dependências e ferramentas próprias em um só ecossistema.",
+        "topics": [
+          "Componentes tipados",
+          "Serviços e dependências",
+          "Organização em módulos"
+        ]
+      },
+      {
+        "name": "React",
+        "logo": "/assets/images/react.png",
+        "role": "Biblioteca de interfaces",
+        "project": "Hora de Aventura",
+        "description": "Uma construção baseada em componentes e composição, com liberdade para definir a arquitetura da aplicação.",
+        "topics": [
+          "JSX e composição",
+          "Props e estado",
+          "Hooks"
+        ]
       },
       {
         "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
-        "icon": "/assets/images/nextjs.svg"
-      },
-      {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
+        "logo": "/assets/images/nextjs.svg",
+        "role": "Framework baseado em React",
+        "project": "Steven Universo",
+        "description": "Uma camada sobre React que adiciona convenções para páginas, rotas, renderização e otimização da aplicação.",
+        "topics": [
+          "Rotas por arquivos",
+          "Renderização híbrida",
+          "Otimização de conteúdo"
+        ]
       }
     ]
   },
