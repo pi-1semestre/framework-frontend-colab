@@ -1,4 +1,4 @@
-export type CharacterCategory = "Principais" | "Gems" | "Homeworld" | "Beach City" | "Fusões" | "Vilões";
+export type CharacterCategory = "Principais" | "Gems" | "Diamantes" | "Beach City" | "Fusões" | "Vilões";
 
 export type Character = {
   id: string; name: string; category: CharacterCategory; color: string; portrait: string;
@@ -30,14 +30,14 @@ export const characters: Character[] = [
   character({id:"peridot",name:"Peridot",category:"Gems",color:"#93cf3b",description:"Uma técnica brilhante que aprende a amar a Terra.",powers:"Ferrocinese e tecnologia Gem.",weapon:"Controle de metal",gem:"Peridoto",relations:"Grande parceira de Lápis."}),
   character({id:"lapis",name:"Lápis Lazúli",category:"Gems",color:"#2da7e8",description:"Poderosa, introspectiva e profundamente conectada ao oceano.",powers:"Hidrocinese, asas de água e voo.",weapon:"Água",gem:"Lápis-lazúli"}),
   character({id:"rose",name:"Rose Quartz",category:"Gems",color:"#f49abd",description:"A líder da rebelião que escolheu proteger a Terra.",powers:"Cura, escudo, força e plantas.",weapon:"Espada e escudo",gem:"Diamante Rosa",relations:"Mãe de Steven e antiga líder das Crystal Gems."}),
-  character({id:"pink",name:"Pink Diamond",category:"Homeworld",color:"#ff78b0",description:"A mais jovem das Diamantes e centro de uma grande transformação.",powers:"Aura destrutiva, cura e metamorfose.",gem:"Diamante Rosa"}),
+  character({id:"pink",name:"Pink Diamond",category:"Diamantes",color:"#ff78b0",description:"A mais jovem das Diamantes e centro de uma grande transformação.",powers:"Aura destrutiva, cura e metamorfose.",gem:"Diamante Rosa"}),
   character({id:"ruby",name:"Rubi",category:"Gems",color:"#e84f5b",description:"Pequena, impulsiva e dona de uma paixão gigantesca.",powers:"Calor, força e resistência.",weapon:"Manopla",gem:"Rubi",relations:"Ama Safira e forma Garnet com ela."}),
   character({id:"sapphire",name:"Safira",category:"Gems",color:"#5ba8e8",description:"Serena e capaz de enxergar possibilidades do futuro.",powers:"Visão do futuro e criocinese.",gem:"Safira",relations:"Ama Rubi e forma Garnet com ela."}),
   character({id:"bismuth",name:"Bismuto",category:"Gems",color:"#63c5b0",description:"Ferreira das Crystal Gems, forte, criativa e apaixonada pela liberdade.",powers:"Força e manipulação de metal aquecido.",weapon:"Martelos e ferramentas",gem:"Bismuto"}),
 
-  character({id:"yellow",name:"Yellow Diamond",category:"Homeworld",color:"#e7cd44",description:"Comandante rígida e poderosa da antiga ordem Gem.",powers:"Desestabilização elétrica e alteração física.",gem:"Diamante Amarelo"}),
-  character({id:"blue",name:"Blue Diamond",category:"Homeworld",color:"#609fe2",description:"Uma Diamante marcada pelo luto e por emoções intensas.",powers:"Aura emocional e alteração física.",gem:"Diamante Azul"}),
-  character({id:"white",name:"White Diamond",category:"Homeworld",color:"#e9e1f2",description:"A autoridade máxima e símbolo do perfeccionismo de Homeworld.",powers:"Controle mental e projeção de luz.",gem:"Diamante Branco"}),
+  character({id:"yellow",name:"Yellow Diamond",category:"Diamantes",color:"#e7cd44",description:"Comandante rígida e poderosa da antiga ordem Gem.",powers:"Desestabilização elétrica e alteração física.",gem:"Diamante Amarelo"}),
+  character({id:"blue",name:"Blue Diamond",category:"Diamantes",color:"#609fe2",description:"Uma Diamante marcada pelo luto e por emoções intensas.",powers:"Aura emocional e alteração física.",gem:"Diamante Azul"}),
+  character({id:"white",name:"White Diamond",category:"Diamantes",color:"#e9e1f2",description:"A autoridade máxima e símbolo do perfeccionismo de Homeworld.",powers:"Controle mental e projeção de luz.",gem:"Diamante Branco"}),
   character({id:"spinel",name:"Spinel",category:"Vilões",color:"#e33c88",description:"Uma antiga amiga que transforma abandono em caos e recomeço.",powers:"Elasticidade extrema.",weapon:"Rejuvenecedor",gem:"Espinélio"}),
   character({id:"jasper",name:"Jasper",category:"Vilões",color:"#e58b42",description:"Uma guerreira feroz obcecada por força e hierarquia.",powers:"Força extrema, giro e corrupção parcial.",weapon:"Capacete",gem:"Jaspe"}),
   character({id:"aquamarine",name:"Aquamarine",category:"Vilões",color:"#79cde5",description:"Pequena agente de Homeworld, calculista e perigosa.",powers:"Voo e tecnologia de contenção.",weapon:"Varinha",gem:"Água-marinha"}),
@@ -55,6 +55,7 @@ export const characters: Character[] = [
   character({id:"smiley",name:"Sr. Smiley",category:"Beach City",color:"#7b5b9e",description:"Administrador incansável do parque e fliperama de Beach City."}),
   character({id:"vidalia",name:"Vidalia",category:"Beach City",color:"#c88f66",description:"Artista, mãe de Sour Cream e Onion e velha amiga de Ametista."}),
   character({id:"nanefua",name:"Nanefua Pizza",category:"Beach City",color:"#d98271",description:"Matriarca da família Pizza e futura prefeita da cidade."}),
+  character({id:"lion",name:"Lion",category:"Principais",color:"#ef82ad",description:"O leão mágico de Steven, guardião silencioso de portais e segredos de Rose.",powers:"Portais dimensionais, caminhada sobre água e rugido sônico.",weapon:"Rugido",relations:"Companheiro de Steven e ligado ao passado de Rose Quartz."}),
 
   character({id:"stevonnie",name:"Stevonnie",category:"Fusões",color:"#bb70a6",description:"Steven e Connie unidos em confiança, descoberta e parceria.",gem:"Quartzo Rosa",relations:"Fusão de Steven e Connie."}),
   character({id:"opal",name:"Opal",category:"Fusões",color:"#9d78cf",description:"Precisão e espontaneidade em perfeito equilíbrio.",weapon:"Arco",gem:"Pérola e Ametista",relations:"Fusão de Pérola e Ametista."}),
@@ -65,4 +66,4 @@ export const characters: Character[] = [
   character({id:"malachite",name:"Malachite",category:"Fusões",color:"#4fc0a7",description:"Uma fusão instável que representa controle, dor e conflito.",gem:"Jaspe e Lápis-lazúli",relations:"Fusão de Jasper e Lápis."}),
 ];
 
-export const characterFilters = ["Todos", "Principais", "Gems", "Homeworld", "Beach City", "Fusões", "Vilões"] as const;
+export const characterFilters = ["Todos", "Principais", "Gems", "Diamantes", "Beach City", "Fusões", "Vilões"] as const;

@@ -14,7 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Steven Universo — Portal Interativo",
-  description: "Explore personagens, músicas, lugares, teorias e monte sua própria equipe de Crystal Gems.",
+  description: "Explore personagens, história, lugares, fusões, jogos, músicas, curiosidades e a obra de Rebecca Sugar.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  openGraph: {
+    title: "Steven Universo — Portal Interativo",
+    description: "Explore um universo de histórias, Gems e conexões",
+    type: "website",
+    locale: "pt_BR",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Steven Universo — Portal Interativo" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
