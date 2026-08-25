@@ -1,0 +1,197 @@
+{
+  "company": {
+    "name": "Cartoon Front-end",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [
+    {
+      "name": "Projetos",
+      "href": "product"
+    },
+    {
+      "name": "Frameworks",
+      "href": "features"
+    },
+    {
+      "name": "Jornada",
+      "href": "journey"
+    },
+    {
+      "name": "Sobre",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Explorar projetos",
+    "href": "#product"
+  },
+  "mainHero": {
+    "eyebrow": "4 desenhos • 4 frameworks • 1 coleção",
+    "title": "Cartoon Network",
+    "subtitle": "em código.",
+    "description": "Uma coleção de projetos front-end inspirados em quatro universos inesquecíveis: Gumball, Historietas Assombradas, Hora de Aventura e Steven Universo.",
+    "img": "/assets/images/happyTeam.jpeg",
+    "primaryAction": {
+      "text": "Conheça os projetos",
+      "href": "#product"
+    },
+    "secondaryAction": {
+      "text": "Ver no GitHub",
+      "href": "https://github.com/pi-1semestre/framework-frontend-colab"
+    }
+  },
+  "product": {
+    "eyebrow": "Projetos da coleção",
+    "title": "Quatro universos, quatro tecnologias",
+    "description": "Cada projeto transforma a identidade de um desenho em uma experiência web própria. Explore o código-fonte e compare como cada framework organiza a mesma proposta.",
+    "items": [
+      {
+        "number": "01",
+        "title": "O Incrível Mundo de Gumball",
+        "framework": "Vue",
+        "description": "Uma experiência colorida inspirada em Elmore, construída com componentes Vue.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-img-vue"
+      },
+      {
+        "number": "02",
+        "title": "Historietas Assombradas",
+        "framework": "Angular",
+        "description": "O universo sobrenatural de Pepe e seus amigos organizado com a estrutura do Angular.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-hapcmc-angular"
+      },
+      {
+        "number": "03",
+        "title": "Hora de Aventura",
+        "framework": "React",
+        "description": "Uma viagem pela Terra de Ooo desenvolvida com componentes e estados do React.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/main/framework-hda-react"
+      },
+      {
+        "number": "04",
+        "title": "Steven Universo",
+        "framework": "Next.js",
+        "description": "Uma página inspirada nas Crystal Gems utilizando os recursos do Next.js.",
+        "href": "https://github.com/pi-1semestre/framework-frontend-colab/tree/feature-next"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Por trás das telas",
+    "title": "Quatro maneiras de construir para a web",
+    "description": "A coleção também funciona como um estudo comparativo: o mesmo desafio de criar interfaces tem soluções e organizações diferentes em cada tecnologia.",
+    "items": [
+      {
+        "name": "Vue",
+        "logo": "/assets/images/vue.svg",
+        "role": "Framework progressivo",
+        "project": "O Incrível Mundo de Gumball",
+        "description": "Uma estrutura direta e flexível, com componentes de arquivo único que aproximam marcação, lógica e estilo.",
+        "topics": [
+          "Componentes reutilizáveis",
+          "Diretivas no template",
+          "Estado reativo"
+        ]
+      },
+      {
+        "name": "Angular",
+        "logo": "/assets/images/angular.png",
+        "role": "Plataforma completa",
+        "project": "Historietas Assombradas",
+        "description": "Uma abordagem estruturada que reúne componentes, injeção de dependências e ferramentas próprias em um só ecossistema.",
+        "topics": [
+          "Componentes tipados",
+          "Serviços e dependências",
+          "Organização em módulos"
+        ]
+      },
+      {
+        "name": "React",
+        "logo": "/assets/images/react.png",
+        "role": "Biblioteca de interfaces",
+        "project": "Hora de Aventura",
+        "description": "Uma construção baseada em componentes e composição, com liberdade para definir a arquitetura da aplicação.",
+        "topics": [
+          "JSX e composição",
+          "Props e estado",
+          "Hooks"
+        ]
+      },
+      {
+        "name": "Next.js",
+        "logo": "/assets/images/nextjs.svg",
+        "role": "Framework baseado em React",
+        "project": "Steven Universo",
+        "description": "Uma camada sobre React que adiciona convenções para páginas, rotas, renderização e otimização da aplicação.",
+        "topics": [
+          "Rotas por arquivos",
+          "Renderização híbrida",
+          "Otimização de conteúdo"
+        ]
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Da ideia ao GitHub",
+    "title": "Como a coleção ganhou forma",
+    "description": "A atividade foi construída em etapas para que cada decisão visual também se transformasse em prática de desenvolvimento front-end.",
+    "items": [
+      {
+        "number": "01",
+        "label": "Conceito",
+        "title": "Escolha dos universos",
+        "description": "Quatro desenhos foram associados às tecnologias de acordo com a personalidade visual de cada projeto.",
+        "result": "Tema e direção visual"
+      },
+      {
+        "number": "02",
+        "label": "Estrutura",
+        "title": "Organização dos projetos",
+        "description": "Cada aplicação recebeu componentes, estilos e arquivos organizados conforme as convenções do seu framework.",
+        "result": "Arquiteturas independentes"
+      },
+      {
+        "number": "03",
+        "label": "Implementação",
+        "title": "Interfaces em componentes",
+        "description": "Telas, seções e interações foram construídas explorando reutilização, estado e responsividade.",
+        "result": "Quatro experiências web"
+      },
+      {
+        "number": "04",
+        "label": "Publicação",
+        "title": "Código compartilhado",
+        "description": "Branches e pastas próprias mantêm os projetos acessíveis para consulta, comparação e evolução no GitHub.",
+        "result": "Uma coleção colaborativa"
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/pi-1semestre/framework-frontend-colab",
+      "twitter": "https://twitter.com/issaafkattan",
+      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+    }
+  }
+}
