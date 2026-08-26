@@ -9,7 +9,7 @@ export function CharacterExplorer() {
   const [filter, setFilter] = useState<(typeof characterFilters)[number]>("Todos");
   const [selected, setSelected] = useState<Character | null>(null);
   const visible = useMemo(
-    () => filter === "Todos" ? characters : characters.filter((item) => item.category === filter),
+    () => filter === "Todos" ? characters : characters.filter((item) => item.categories.includes(filter)),
     [filter],
   );
 
@@ -47,7 +47,9 @@ export function CharacterExplorer() {
         {visible.map((character) => (
           <article className="character-card character-card-direct" key={character.id} style={{ "--accent": character.color } as React.CSSProperties}>
             <div className="character-image"><Portrait portrait={character.portrait} name={character.name}/></div>
-            <span className="category-pill">{character.category}</span>
+            <div className="category-list" aria-label={`Categorias de ${character.name}`}>
+              {character.categories.map((category) => <span className="category-pill" key={category}>{category}</span>)}
+            </div>
             <h3>{character.name}</h3>
             <p>{character.description}</p>
             <div className="character-essentials"><span><small>{character.gem !== "Não possui Gem" ? "GEM" : "DESTAQUE"}</small>{character.gem !== "Não possui Gem" ? character.gem : character.weapon}</span></div>
@@ -62,7 +64,9 @@ export function CharacterExplorer() {
             <button className="character-dialog-close" type="button" aria-label="Fechar perfil" onClick={() => setSelected(null)}><X/></button>
             <div className="character-dialog-art" style={{ "--accent": selected.color } as React.CSSProperties}><Portrait portrait={selected.portrait} name={selected.name}/></div>
             <div className="character-dialog-copy">
-              <span className="category-pill">{selected.category}</span>
+              <div className="category-list" aria-label={`Categorias de ${selected.name}`}>
+                {selected.categories.map((category) => <span className="category-pill" key={category}>{category}</span>)}
+              </div>
               <h2 id="character-dialog-title">{selected.name}</h2>
               <p className="character-dialog-lead">{selected.description}</p>
               <div className="character-profile-grid">

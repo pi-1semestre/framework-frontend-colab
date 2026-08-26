@@ -14,10 +14,9 @@ export const games = [
 ];
 
 export const moments = [
-  // Preencha youtubeUrl quando quiser ativar o link de cada momento.
   { title: "O escudo de Steven", episode: "Gem Glow", season: "Temporada 1", image: "/characters/steven.webp", teaser: "O primeiro passo para compreender seu legado.", spoiler: "Steven manifesta seu escudo pela primeira vez e percebe que seus poderes respondem às emoções.", youtubeUrl:"" },
-  { title: "Uma Mulher Gigante", episode: "Giant Woman", season: "Temporada 1", image: "/characters/opal.webp", teaser: "Steven descobre o significado de uma fusão.", spoiler: "Pérola e Ametista encontram equilíbrio suficiente para formar Opal e resgatar Steven.", youtubeUrl:"https://www.youtube.com/watch?v=JD53UqgdMZU" },
-  { title: "Mais forte que você", episode: "Jail Break", season: "Temporada 1", image: "/characters/garnet.webp", teaser: "Uma verdade sobre Garnet muda a série.", spoiler: "A identidade de Garnet como a fusão amorosa entre Rubi e Safira é finalmente revelada.", youtubeUrl:"" },
+  { title: "Uma Mulher Gigante", episode: "Giant Woman", season: "Temporada 1", image: "/characters/opal.webp", teaser: "Steven descobre o significado de uma fusão.", spoiler: "Pérola e Ametista encontram equilíbrio suficiente para formar Opal e resgatar Steven.", youtubeUrl:"https://www.youtube.com/watch?v=fPuR95X0t3k" },
+  { title: "Mais forte que você", episode: "Jail Break", season: "Temporada 1", image: "/characters/garnet.webp", teaser: "Uma verdade sobre Garnet muda a série.", spoiler: "A identidade de Garnet como a fusão amorosa entre Rubi e Safira é finalmente revelada.", youtubeUrl:"https://www.youtube.com/watch?v=coOK-eZDm4k" },
   { title: "A nova Crystal Gem", episode: "The New Crystal Gems", season: "Temporada 4", image: "/characters/peridot.webp", teaser: "Novas amizades assumem uma grande responsabilidade.", spoiler: "Connie, Peridot, Lápis e Pumpkin tentam proteger Beach City enquanto o grupo principal está fora.", youtubeUrl:"" },
   { title: "A verdade de Rose", episode: "A Single Pale Rose", season: "Temporada 5", image: "/characters/pink.webp", teaser: "Memórias escondidas reorganizam toda a história.", spoiler: "Steven descobre a ligação definitiva entre Rose Quartz e Pink Diamond.", youtubeUrl:"" },
   { title: "Reunidos", episode: "Reunited", season: "Temporada 5", image: "/characters/sapphire.webp", teaser: "Uma celebração se transforma em confronto cósmico.", spoiler: "O casamento de Rubi e Safira antecede a chegada das Diamantes à Terra.", youtubeUrl:"https://www.youtube.com/watch?v=Tfv8CaPINWw" },
@@ -26,31 +25,32 @@ export const moments = [
 ];
 
 export const fusionGuide = [
-  // Preencha youtubeUrl quando quiser ativar o link de cada fusão.
-  { name:"Garnet", parts:"Rubi + Safira", episode:"Jail Break", season:"T1", image:"/characters/garnet.webp", text:"Amor, confiança e escolha em uma fusão estável.", youtubeUrl:"https://www.youtube.com/watch?v=Tfv8CaPINWw" },
-  { name:"Opal", parts:"Pérola + Ametista", episode:"Giant Woman", season:"T1", image:"/characters/opal.webp", text:"Precisão e espontaneidade em equilíbrio.", youtubeUrl:"https://www.youtube.com/watch?v=JD53UqgdMZU" },
-  { name:"Sugilite", parts:"Garnet + Ametista", episode:"Coach Steven", season:"T1", image:"/characters/sugilite.webp", text:"Força e intensidade difíceis de conter.", youtubeUrl:"" },
-  { name:"Sardonyx", parts:"Garnet + Pérola", episode:"Cry for Help", season:"T2", image:"/characters/sardonyx.webp", text:"Elegância teatral e inteligência técnica.", youtubeUrl:"" },
-  { name:"Alexandrite", parts:"Garnet + Pérola + Ametista", episode:"Fusion Cuisine", season:"T1", image:"/characters/alexandrite.webp", text:"A união coletiva das Crystal Gems clássicas.", youtubeUrl:"" },
-  { name:"Stevonnie", parts:"Steven + Connie", episode:"Alone Together", season:"T1", image:"/characters/stevonnie.webp", text:"Confiança, descoberta e parceria.", youtubeUrl:"" },
-  { name:"Malachite", parts:"Jasper + Lápis", episode:"Jail Break", season:"T1", image:"/characters/malachite.webp", text:"Uma relação instável marcada por controle e dor.", youtubeUrl:"" },
-  { name:"Smoky Quartz", parts:"Steven + Ametista", episode:"Earthlings", season:"T3", image:"/characters/smoky.webp", text:"Humor e autoaceitação transformados em força.", youtubeUrl:"https://www.youtube.com/watch?v=Tz6ov5LrFJI" },
-  { name:"Rainbow Quartz", parts:"Rose + Pérola", episode:"We Need to Talk", season:"T2", image:"/expanded/rainbow.webp", text:"Uma fusão graciosa ligada ao passado de Greg.", youtubeUrl:"" },
-  { name:"Rainbow Quartz 2.0", parts:"Steven + Pérola", episode:"Change Your Mind", season:"T5", image:"/expanded/rainbow-20.webp", text:"Leveza, cuidado e criatividade em movimento.", youtubeUrl:"" },
-  { name:"Sunstone", parts:"Steven + Garnet", episode:"Change Your Mind", season:"T5", image:"/expanded/sunstone.webp", text:"Entusiasmo, segurança e força protetora.", youtubeUrl:"" },
-  { name:"Obsidian", parts:"Steven + Garnet + Pérola + Ametista", episode:"Change Your Mind", season:"T5", image:"/expanded/obsidian.webp", text:"A forma colossal das Crystal Gems reunidas.", youtubeUrl:"" },
-  { name:"Steg", parts:"Steven + Greg", episode:"Steven Universe: The Movie", season:"Filme", image:"/expanded/steg.webp", text:"A conexão musical entre pai e filho.", youtubeUrl:"" },
-  { name:"Mega Pearl", parts:"Pérola + Volleyball", episode:"Volleyball", season:"Future", image:"/expanded/mega-pearl.webp", text:"Compreensão compartilhada de feridas antigas.", youtubeUrl:"" },
-  { name:"Bluebird Azurite", parts:"Aquamarine + Eyeball", episode:"Bluebird", season:"Future", image:"/expanded/bluebird.webp", text:"Uma aliança construída pelo ressentimento.", youtubeUrl:"" },
-  { name:"Fluorite", parts:"Seis Gems", episode:"Off Colors", season:"T5", image:"/expanded/fluorite.webp", text:"Uma fusão longa, paciente e livre da ordem de Homeworld.", youtubeUrl:"" },
-  { name:"Rhodonite", parts:"Rubi + Pérola", episode:"Off Colors", season:"T5", image:"/expanded/rhodonite.webp", text:"Uma relação que escolheu existir apesar das regras.", youtubeUrl:"" },
+  { name:"Garnet", parts:"Rubi + Safira", episode:"Gem Glow", season:"T1", image:"/characters/garnet.webp", text:"Amor, confiança e escolha em uma fusão estável; sua natureza de fusão é revelada em Jail Break.", youtubeId:"coOK-eZDm4k", videoLanguage:"Inglês" },
+  { name:"Opal", parts:"Pérola + Ametista", episode:"Giant Woman", season:"T1", image:"/characters/opal.webp", text:"Precisão e espontaneidade em equilíbrio.", youtubeId:"fPuR95X0t3k", videoLanguage:"Inglês" },
+  { name:"Sugilite", parts:"Garnet + Ametista", episode:"Coach Steven", season:"T1", image:"/characters/sugilite.webp", text:"Força e intensidade difíceis de conter." },
+  { name:"Sardonyx", parts:"Garnet + Pérola", episode:"Cry for Help", season:"T2", image:"/characters/sardonyx.webp", text:"Elegância teatral e inteligência técnica.", youtubeId:"aUC6ad-lO4g", videoLanguage:"Português (Brasil)" },
+  { name:"Alexandrite", parts:"Garnet + Pérola + Ametista", episode:"Fusion Cuisine", season:"T1", image:"/characters/alexandrite.webp", text:"A união coletiva das Crystal Gems clássicas." },
+  { name:"Stevonnie", parts:"Steven + Connie", episode:"Alone Together", season:"T1", image:"/characters/stevonnie.webp", text:"Confiança, descoberta e parceria.", youtubeId:"luhO9HPUClk", videoLanguage:"Inglês" },
+  { name:"Malachite", parts:"Jasper + Lápis", episode:"Jail Break", season:"T1", image:"/characters/malachite.webp", text:"Uma relação instável marcada por controle e dor.", youtubeId:"TRX1WSmV-PI", videoLanguage:"Português (Brasil)" },
+  { name:"Smoky Quartz", parts:"Steven + Ametista", episode:"Earthlings", season:"T3", image:"/characters/smoky.webp", text:"Humor e autoaceitação transformados em força.", youtubeId:"aNqERAk81Fo", videoLanguage:"Português (Brasil)" },
+  { name:"Rainbow Quartz", parts:"Rose + Pérola", episode:"We Need to Talk", season:"T2", image:"/expanded/rainbow.webp", text:"Uma fusão graciosa ligada ao passado de Greg." },
+  { name:"Rainbow Quartz 2.0", parts:"Steven + Pérola", episode:"Change Your Mind", season:"T5", image:"/expanded/rainbow-20.webp", text:"Leveza, cuidado e criatividade em movimento." },
+  { name:"Sunstone", parts:"Steven + Garnet", episode:"Change Your Mind", season:"T5", image:"/expanded/sunstone.webp", text:"Entusiasmo, segurança e força protetora.", youtubeId:"ThREnmi1mbI", videoLanguage:"Inglês" },
+  { name:"Obsidian", parts:"Steven + Garnet + Pérola + Ametista", episode:"Change Your Mind", season:"T5", image:"/expanded/obsidian.webp", text:"A forma colossal das Crystal Gems reunidas.", youtubeId:"-dZ254gOnZA", videoLanguage:"Inglês" },
+  { name:"Steg", parts:"Steven + Greg", episode:"Steven Universe: The Movie", season:"Filme", image:"/expanded/steg.webp", text:"A conexão musical entre pai e filho." },
+  { name:"Mega Pearl", parts:"Pérola + Volleyball", episode:"Volleyball", season:"Future", image:"/expanded/mega-pearl.webp", text:"Compreensão compartilhada de feridas antigas.", youtubeId:"xAqlyWsPYy4", videoLanguage:"Inglês" },
+  { name:"Bluebird Azurite", parts:"Aquamarine + Eyeball", episode:"Bluebird", season:"Future", image:"/expanded/bluebird.webp", text:"Uma aliança construída pelo ressentimento." },
+  { name:"Fluorite", parts:"Seis Gems não identificadas individualmente", episode:"Off Colors", season:"T5", image:"/expanded/fluorite.webp", text:"Uma fusão longa, paciente e livre da ordem de Homeworld." },
+  { name:"Rhodonite", parts:"Uma Rubi + uma Pérola", episode:"Off Colors", season:"T5", image:"/expanded/rhodonite.webp", text:"Uma relação que escolheu existir apesar das regras." },
 ];
 
 export const fusionVideos = [
-  {id:"Tfv8CaPINWw",title:"Rubi e Safira formam Garnet",episode:"Reunited",text:"A fusão como escolha, compromisso e celebração do amor."},
-  {id:"JD53UqgdMZU",title:"Pérola e Ametista formam Opal",episode:"Giant Woman",text:"Duas personalidades diferentes encontram equilíbrio para proteger Steven."},
-  {id:"Tz6ov5LrFJI",title:"Steven e Ametista formam Smoky Quartz",episode:"Earthlings",text:"A autoaceitação transforma insegurança compartilhada em uma nova força."},
-  {id:"zK6R8Z9Uph0",title:"O que torna uma fusão especial",episode:"Know Your Fusion",text:"Um momento dedicado a entender habilidades, identidade e conexão nas fusões."},
+  {id:"coOK-eZDm4k",title:"Steven descobre que Garnet é uma fusão",episode:"Jail Break · oficial em inglês",text:"O momento exato em que Rubi e Safira se reencontram, formam Garnet e revelam sua identidade a Steven."},
+  {id:"aUC6ad-lO4g",title:"Garnet e Pérola formam Sardonyx",episode:"Cry for Help · oficial em português",text:"A entrada teatral de Sardonyx em um clipe do canal oficial Steven Universo Brasil."},
+  {id:"TRX1WSmV-PI",title:"Jasper e Lápis formam Malachite",episode:"Jail Break · oficial em português",text:"O surgimento de Malachite e o início de uma relação marcada por controle e conflito."},
+  {id:"aNqERAk81Fo",title:"Steven e Ametista formam Smoky Quartz",episode:"Earthlings · oficial em português",text:"A autoaceitação compartilhada dá forma a Smoky Quartz."},
+  {id:"ThREnmi1mbI",title:"Steven e Garnet formam Sunstone",episode:"Change Your Mind · oficial em inglês",text:"A fusão protetora aparece durante o confronto final em Homeworld."},
+  {id:"-dZ254gOnZA",title:"As Crystal Gems formam Obsidian",episode:"Change Your Mind · oficial em inglês",text:"Steven, Garnet, Pérola e Ametista se unem para alcançar White Diamond."},
 ];
 
 export type TriviaQuestion = { question:string; answers:string[]; correct:number; difficulty:"Fácil"|"Médio"|"Difícil"; category:string; fact:string };
