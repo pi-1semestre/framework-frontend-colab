@@ -250,3 +250,157 @@ footer{position:relative;overflow:hidden;padding-top:0;background:linear-gradien
 @media(max-width:1050px){.fusion-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){.fusion-atlas>.section{width:calc(100% - 24px)}.fusion-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin-inline:0;padding:0}.fusion-art{max-height:300px}.theme-card:last-child{grid-column:auto}.theme-card-art{min-height:220px}.timeline article:hover{transform:none}}
 @media(max-width:440px){.fusion-grid{display:grid;grid-template-columns:1fr;overflow:visible;margin-inline:0;padding:0}.fusion-grid>article{min-width:0}.fusion-art{aspect-ratio:5/4;max-height:290px}.rebecca-links{flex-direction:column}.rebecca-links>a{width:100%}}
+
+/* Mobile: composição final sem carrosséis acidentais ou conteúdo espremido */
+body{overflow-x:hidden}
+.site-shell,.section,.section-heading,.section-heading>div,.character-card,.fusion-grid>article,.timeline article,.games-track>article,.song-card{min-width:0}
+h1,h2,h3,p,a,button,dd{overflow-wrap:anywhere}
+
+@media(max-width:700px){
+  html{scroll-padding-top:82px}
+  .section{width:calc(100% - 28px)}
+  .expanded-section,.characters-section,.themes-section,.facts-section,.awards-section,.rebecca-section{padding-top:72px;padding-bottom:72px}
+  .section-heading{gap:14px;margin-bottom:25px}
+  .section-heading h2,.themes-heading h2,.facts-heading h2{font-size:clamp(34px,10vw,44px);line-height:.98;letter-spacing:-2.5px}
+  .section-heading>p,.themes-heading>p{font-size:13px;line-height:1.6}
+  .eyebrow{font-size:9px;line-height:1.35;letter-spacing:1.25px}
+
+  .site-header.site-header{top:7px;width:calc(100% - 14px);height:68px;margin-bottom:-68px;padding:7px 8px 7px 12px;border-radius:21px}
+  .site-header.site-header .brand>svg{width:40px;height:40px;padding:9px}
+  .site-header.site-header .brand strong{font-size:20px;letter-spacing:-1.3px}
+  .site-header.site-header .brand small{font-size:12px}
+  .site-header.site-header .menu-toggle{width:44px;height:44px;border-radius:13px}
+  .site-header.site-header nav{top:75px;max-height:calc(100dvh - 90px);border-radius:18px}
+  .site-header.site-header nav>a,.site-header.site-header nav .header-more-menu a{min-height:46px;font-size:11px;line-height:1.2}
+
+  .hero.hero-cutout-layout{min-height:0;display:flex;align-items:stretch;flex-direction:column;gap:12px;padding:112px 16px 28px;overflow:hidden}
+  .hero-cutout-layout .hero-copy{width:100%}
+  .hero-cutout-layout .hero-copy h1{margin:14px 0 18px;font-size:clamp(52px,17vw,72px);line-height:.8;letter-spacing:-4.5px}
+  .hero-cutout-layout .hero-copy h2{margin:18px 0 10px;font-size:21px;letter-spacing:-.5px}
+  .hero-cutout-layout .hero-copy>p{font-size:13px;line-height:1.65}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:21px}
+  .hero-actions .button{width:100%;min-height:50px}
+  .hero-cutout.hero-figures{height:360px;padding:12px 0 0;overflow:hidden}
+  .hero-character-stage{width:100%;height:100%}
+  .hero-cutout-glow{display:none}
+  .hero-cutout-orbit{inset:10% 3% 4%;width:auto;height:auto}
+  .hero-cutout .float-badge{top:10px;right:4px}
+  .hero-sparkles{display:none}
+
+  .story-section.story-section{gap:22px;padding:68px 0}
+  .story-copy h2{font-size:38px;letter-spacing:-2.2px}
+  .story-copy>p{font-size:13px;line-height:1.7}
+  .story-ensemble.story-ensemble{min-height:330px;order:0;border-radius:24px}
+  .story-section .story-ensemble.story-ensemble>img{inset:auto 0 48px!important;width:100%!important;max-height:calc(100% - 58px)!important}
+  .series-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .text-link{min-height:44px;margin-top:8px}
+
+  .characters-section>.horizontal-hint{display:none}
+  .character-filters{margin-inline:-14px;padding-inline:14px}
+  .characters-section .character-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;overflow:visible;margin-inline:0;padding:0}
+  .characters-section .character-card-direct{min-width:0;display:flex;flex-direction:column}
+  .characters-section .character-card-direct .character-image{height:260px}
+  .character-card-direct>p{min-height:0}
+  .character-dialog{max-height:calc(100dvh - 16px)}
+  .character-dialog-art{min-height:285px}
+  .character-dialog-copy{padding:26px 20px}
+
+  .theme-lead{grid-template-columns:1fr;min-height:0}
+  .theme-lead-art{grid-row:1;min-height:250px}
+  .theme-lead-copy{grid-row:2;padding:28px 22px 31px}
+  .theme-lead-copy h3{font-size:35px;letter-spacing:-2px}
+  .themes-grid{grid-template-columns:1fr}
+  .theme-card:last-child{grid-column:auto}
+  .theme-card-art,.theme-card:last-child .theme-card-art{height:auto;min-height:225px;aspect-ratio:4/3}
+
+  .fusion-video-library{grid-template-columns:1fr;gap:10px}
+  .fusion-video-player,.fusion-video-list{border-radius:18px}
+  .fusion-video-player>div{padding:17px}
+  .fusion-video-list{display:flex;max-height:none;overflow-x:auto;overflow-y:hidden;gap:7px;padding:7px;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .fusion-video-list::-webkit-scrollbar{display:none}
+  .fusion-video-list button{flex:0 0 min(280px,82vw);scroll-snap-align:start}
+  .fusion-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .fusion-grid>article{min-width:0}
+  .fusion-art{aspect-ratio:4/5;max-height:none}
+  .fusion-copy{padding:15px}
+  .fusion-copy h3{font-size:19px}
+  .fusion-copy dl{grid-template-columns:1fr}
+
+  .moments-section>.visible-hint{display:none}
+  .timeline{display:grid;grid-template-columns:1fr;gap:13px;overflow:visible;margin-inline:0;padding:0}
+  .timeline article{width:auto;display:grid;grid-template-columns:1fr;gap:11px;padding:11px;transform:none}
+  .timeline-dot{left:19px;top:19px}
+  .moment-image{grid-column:auto;height:205px}
+  .timeline article>div:last-child{padding:2px 4px 4px}
+  .timeline article>div:last-child>p{min-height:0}
+  .moment-actions{gap:7px}
+
+  .games-track>article{flex-basis:min(86vw,340px)}
+  .game-cover{height:195px}
+  .games-track p{min-height:0}
+  .carousel-controls{margin-top:9px}
+  .carousel-controls>button{width:46px;height:46px}
+
+  .song-card{grid-template-columns:56px 28px minmax(0,1fr) auto;gap:9px;padding:12px}
+  .song-card>.portrait{width:56px;height:66px}
+  .song-card h3{font-size:14px;white-space:normal}
+  .song-card>a{grid-column:1/-1;min-height:44px}
+
+  .facts-section .facts-editorial{grid-template-columns:1fr;gap:12px}
+  .facts-section .fact-note,.facts-section .fact-note:first-child{grid-column:auto;min-height:0;padding:22px}
+  .facts-section .fact-note:first-child h3{font-size:25px}
+
+  .quiz-section{min-height:0;padding:72px 14px}
+  .quiz-card{min-height:0;padding:22px 18px;border-radius:22px}
+  .quiz-card h2{font-size:34px;letter-spacing:-2px}
+  .answer-grid{grid-template-columns:1fr}
+  .answer-grid button{min-height:54px}
+
+  .awards-grid{grid-template-columns:1fr}
+  .awards-grid>a{min-height:260px;padding:22px}
+  .rebecca-layout{gap:28px}
+  .rebecca-photo{height:360px;border-radius:24px}
+  .rebecca-copy h2{font-size:49px;letter-spacing:-3px}
+  .rebecca-copy .lead{font-size:15px}
+  .rebecca-facts{grid-template-columns:1fr}
+  .rebecca-links{flex-direction:column}
+  .rebecca-links>a{width:100%}
+
+  .footer-callout{padding:58px 16px 40px}
+  .footer-callout h2{font-size:41px;letter-spacing:-2.8px}
+  .footer-callout>a{min-height:48px}
+  .footer-main{grid-template-columns:1fr 1fr;gap:28px;padding-top:42px}
+  .footer-main>div:first-child,.footer-official{grid-column:1/-1}
+  .footer-main nav a,.footer-official>a{min-height:32px;align-items:center}
+  .footer-bottom{gap:12px}
+  .footer-bottom small{line-height:1.55}
+}
+
+@media(max-width:520px){
+  .site-header.site-header nav .header-more-menu,.site-header.site-header nav .header-more-menu.open{grid-template-columns:1fr}
+  .hero-cutout.hero-figures{height:310px}
+  .figure-garnet{left:-7%;width:45%;height:75%}.figure-pearl{left:19%;width:43%;height:76%}.figure-steven{left:45%;width:45%;height:69%}.figure-amethyst{right:-8%;width:42%;height:59%}
+  .characters-section .character-grid{grid-template-columns:1fr}
+  .characters-section .character-card-direct .character-image{height:300px}
+  .fusion-grid{grid-template-columns:1fr}
+  .fusion-art{aspect-ratio:5/4;max-height:300px}
+  .fusion-copy dl{grid-template-columns:1fr 1fr}
+  .moment-actions{display:grid;grid-template-columns:1fr}
+  .timeline .moment-actions button,.timeline .moment-actions a,.timeline .moment-actions .pending-video{width:100%;margin-top:0}
+  .song-card{grid-template-columns:52px 24px minmax(0,1fr)}
+  .song-card>.portrait{width:52px;height:62px}
+  .song-card time{grid-column:3}
+  .song-card>a{grid-column:1/-1}
+  .rebecca-photo{height:315px}
+}
+
+@media(max-width:380px){
+  .section{width:calc(100% - 20px)}
+  .hero.hero-cutout-layout{padding-inline:12px}
+  .hero-cutout-layout .hero-copy h1{font-size:49px}
+  .series-facts{grid-template-columns:1fr}
+  .filter-row button{padding-inline:12px}
+  .fusion-copy dl{grid-template-columns:1fr}
+  .footer-main{grid-template-columns:1fr}
+  .footer-main nav,.footer-main>div:first-child,.footer-official{grid-column:1}
+}
