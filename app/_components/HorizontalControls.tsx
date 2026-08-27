@@ -22,7 +22,7 @@ export function HorizontalControls({
       <button type="button" aria-label={`${label} anteriores`} disabled={atStart} onClick={onPrevious}>
         <ChevronLeft />
       </button>
-      <span>Deslize ou use as setas</span>
+      <span>Navegação lateral</span>
       <button type="button" aria-label={`Próximos ${label}`} disabled={atEnd} onClick={onNext}>
         <ChevronRight />
       </button>

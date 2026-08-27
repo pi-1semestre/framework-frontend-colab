@@ -71,8 +71,6 @@ export function CharacterExplorer() {
           <button type="button" className={filter === item ? "active" : ""} aria-pressed={filter === item} key={item} onClick={() => setFilter(item)}>{item}</button>
         ))}
       </div>
-      <p className="horizontal-hint">Três linhas de personagens — deslize para explorar todo o elenco <span aria-hidden="true">→</span></p>
-
       <div className="character-rows">
         {rows.map((items, index) => <CharacterRow key={`${filter}-${index}`} items={items} row={index + 1} onSelect={setSelected} />)}
       </div>

@@ -13,15 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steven Universo — Portal Interativo",
+  title: "Steven Universo | Portal Interativo",
   description: "Explore personagens, história, lugares, fusões, jogos, músicas, curiosidades e a obra de Rebecca Sugar.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://steven-universo-next.vercel.app"),
   openGraph: {
-    title: "Steven Universo — Portal Interativo",
+    title: "Steven Universo | Portal Interativo",
     description: "Explore um universo de histórias, Gems e conexões",
     type: "website",
     locale: "pt_BR",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Steven Universo — Portal Interativo" }],
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Steven Universo | Portal Interativo" }],
   },
   twitter: { card: "summary_large_image", images: ["/og.png"] },
 };

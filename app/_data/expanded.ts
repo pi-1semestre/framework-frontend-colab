@@ -1,7 +1,7 @@
 export const seriesThemes = [
   {id:"familia",number:"01",label:"Família escolhida",title:"Família é quem escolhe ficar",image:"/story-cast.webp",text:"Steven cresce cercado por pessoas muito diferentes, unidas não pela perfeição, mas pelo cuidado diário. A série transforma aventuras cósmicas em uma história sobre acolhimento, confiança e pertencimento."},
   {id:"identidade",number:"02",label:"Identidade",title:"Ser quem você é",image:"/characters/stevonnie.webp",text:"Cada personagem aprende a existir além do papel que recebeu. Escolha, expressão e liberdade importam mais do que qualquer expectativa."},
-  {id:"relacoes",number:"03",label:"Relações",title:"Equilíbrio se constrói",image:"/characters/garnet.webp",text:"As fusões mostram que relações saudáveis precisam de confiança, diálogo e consentimento — poder sem respeito nunca é união."},
+  {id:"relacoes",number:"03",label:"Relações",title:"Equilíbrio se constrói",image:"/characters/garnet.webp",text:"As fusões mostram que relações saudáveis precisam de confiança, diálogo e consentimento. Poder sem respeito nunca é união."},
   {id:"crescimento",number:"04",label:"Amadurecimento",title:"Mudar também é coragem",image:"/characters/lapis.webp",text:"Curar não significa apagar o passado. Steven e seus amigos aprendem a reconhecer feridas, assumir escolhas e criar novos caminhos."},
 ];
 

@@ -31,7 +31,7 @@ export function Logo({ footer = false, onNavigate }: { footer?: boolean; onNavig
       className={`brand ${footer ? "footer-brand" : ""}`}
       href="#inicio"
       onClick={onNavigate ? (event) => onNavigate(event, "#inicio") : undefined}
-      aria-label="Steven Universo — início"
+      aria-label="Steven Universo, início"
     >
       <Image
         className="brand-icon"
