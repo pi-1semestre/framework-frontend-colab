@@ -29,7 +29,7 @@ export function UniverseGuide() {
           </div>
           <div className="theme-lead-art">
             <span className="theme-orbit" aria-hidden="true"/>
-            <Image src={leadTheme.image} alt="Steven com as Crystal Gems" fill sizes="(max-width: 800px) 100vw, 50vw"/>
+            <Image src={leadTheme.image} alt="Steven com sua família escolhida" fill sizes="(max-width: 800px) 100vw, 50vw"/>
           </div>
         </article>
 
@@ -57,18 +57,84 @@ export function FusionGuide() {
   const { trackRef: videoTrackRef, atStart: videoAtStart, atEnd: videoAtEnd, move: moveVideo } = useHorizontalScroll<HTMLDivElement>();
   const { trackRef: fusionTrackRef, atStart: fusionAtStart, atEnd: fusionAtEnd, move: moveFusion } = useHorizontalScroll<HTMLDivElement>();
   const video = fusionVideos[activeVideo];
-  return <section className="fusion-atlas" id="fusoes"><div className="section"><div className="section-heading fusion-heading"><div><span className="eyebrow light"><Sparkles size={14}/> ATLAS DAS FUSÕES</span><h2>Conexões que ganham forma</h2></div><p>Quem forma cada fusão, quando ela surge e o que sua relação expressa. Inclui vídeos oficiais.</p></div>
+  return <section className="fusion-atlas" id="fusoes"><div className="section"><div className="section-heading fusion-heading"><div><span className="eyebrow light"><Sparkles size={14}/> ATLAS DAS FUSÕES</span><h2>Conexões que ganham forma</h2></div><p>Quem forma cada fusão, quando ela surge e o que sua relação expressa. Os vídeos mostram a cena correspondente.</p></div>
     <div className="fusion-video-library">
       <div className="fusion-video-player"><iframe key={video.id} src={`https://www.youtube-nocookie.com/embed/${video.id}`} title={video.title} loading="lazy" referrerPolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/><div><small>{video.episode}</small><h3>{video.title}</h3><p>{video.text}</p></div></div>
       <div className="horizontal-carousel-frame fusion-video-row-frame"><div className="fusion-video-list" ref={videoTrackRef} role="group" aria-label="Escolher vídeo sobre fusões">{fusionVideos.map((item,index)=><button type="button" className={index===activeVideo?"active":""} aria-pressed={index===activeVideo} onClick={()=>setActiveVideo(index)} key={item.id}><span>{String(index+1).padStart(2,"0")}</span><div><small>{item.episode}</small><strong>{item.title}</strong></div><Play/></button>)}</div><HorizontalControls className="side-controls fusion-video-controls" label="vídeos" atStart={videoAtStart} atEnd={videoAtEnd} onPrevious={() => moveVideo(-1)} onNext={() => moveVideo(1)} /></div>
     </div>
-    <div className="horizontal-carousel-frame fusion-row-frame"><div className="fusion-grid" ref={fusionTrackRef} tabIndex={0} aria-label="Fusões do universo">{fusionGuide.map(f=><article key={f.name}><div className="fusion-art"><Image src={f.image} alt={f.name} width={420} height={500}/></div><div className="fusion-copy"><small>{f.parts}</small><h3>{f.name}</h3><p>{f.text}</p><dl><div><dt>Primeira aparição</dt><dd>{f.episode}</dd></div><div><dt>Fase</dt><dd>{f.season}</dd></div></dl>{f.youtubeId?<a href={`https://www.youtube.com/watch?v=${f.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Assistir ao momento de ${f.name}, ${f.videoLanguage}`}><Play/> Ver fusão · {f.videoLanguage} <ExternalLink/></a>:<span className="pending-video"><VideoOff/> Sem clipe oficial confirmado</span>}</div></article>)}</div><HorizontalControls className="side-controls" label="fusões" atStart={fusionAtStart} atEnd={fusionAtEnd} onPrevious={() => moveFusion(-1)} onNext={() => moveFusion(1)} /></div></div></section>;
+    <div className="horizontal-carousel-frame fusion-row-frame"><div className="fusion-grid" ref={fusionTrackRef} tabIndex={0} aria-label="Fusões do universo">{fusionGuide.map(f=><article key={f.name}><div className="fusion-art"><Image src={f.image} alt={f.name} width={420} height={500}/></div><div className="fusion-copy"><small>{f.parts}</small><h3>{f.name}</h3><p>{f.text}</p><dl><div><dt>Primeira aparição</dt><dd>{f.episode}</dd></div><div><dt>Fase</dt><dd>{f.season}</dd></div></dl>{f.youtubeId?<a href={`https://www.youtube.com/watch?v=${f.youtubeId}`} target="_blank" rel="noreferrer" aria-label={`Assistir ao momento de ${f.name}, ${f.videoLanguage}`}><Play/> Ver fusão · {f.videoLanguage} <ExternalLink/></a>:<span className="pending-video"><VideoOff/> Sem vídeo da cena</span>}</div></article>)}</div><HorizontalControls className="side-controls" label="fusões" atStart={fusionAtStart} atEnd={fusionAtEnd} onPrevious={() => moveFusion(-1)} onNext={() => moveFusion(1)} /></div></div></section>;
 }
 
 export function MomentsTimeline() {
-  const [open,setOpen]=useState<number|null>(null);
+  const [open, setOpen] = useState<number | null>(null);
   const { trackRef, atStart, atEnd, move } = useHorizontalScroll<HTMLDivElement>();
-  return <section className="expanded-section moments-section section" id="momentos"><div className="section-heading"><div><span className="eyebrow"><Star size={14}/> SEM SPOILERS À PRIMEIRA VISTA</span><h2>Momentos marcantes</h2></div><p>Explore a linha do tempo e abra cada capítulo quando quiser revelar sua importância.</p></div><div className="horizontal-carousel-frame moments-row-frame"><div className="timeline" ref={trackRef} tabIndex={0} aria-label="Momentos marcantes da série">{moments.map((m,i)=><article className={open===i?"open":""} key={m.title}><span className="timeline-dot">{String(i+1).padStart(2,"0")}</span><div className="moment-image"><Image src={m.image} alt="" width={360} height={260}/></div><div><small>{m.season} · {m.episode}</small><h3>{m.title}</h3><p>{m.teaser}</p>{open===i&&<p className="spoiler-copy"><strong>Revelação:</strong> {m.spoiler}</p>}<div className="moment-actions"><button type="button" onClick={()=>setOpen(open===i?null:i)}>{open===i?"Ocultar detalhes":"Revelar momento"}<ChevronRight/></button>{m.youtubeUrl?<a href={m.youtubeUrl} target="_blank" rel="noreferrer"><Play/> Assistir ao momento <ExternalLink/></a>:<span className="pending-video"><VideoOff/> Sem clipe oficial confirmado</span>}</div></div></article>)}</div><HorizontalControls className="side-controls" label="momentos" atStart={atStart} atEnd={atEnd} onPrevious={() => move(-1)} onNext={() => move(1)} /></div></section>;
+
+  return (
+    <section className="expanded-section moments-section section" id="momentos">
+      <div className="section-heading">
+        <div>
+          <span className="eyebrow"><Star size={14}/> SEM SPOILERS À PRIMEIRA VISTA</span>
+          <h2>Momentos marcantes</h2>
+        </div>
+        <p>Explore a linha do tempo e abra cada capítulo quando quiser revelar sua importância.</p>
+      </div>
+
+      <div className="horizontal-carousel-frame moments-row-frame">
+        <div className="timeline" ref={trackRef} tabIndex={0} aria-label="Momentos marcantes da série">
+          {moments.map((moment, index) => {
+            const isOpen = open === index;
+            const detailsId = `moment-details-${index}`;
+
+            return (
+              <article className={isOpen ? "open" : ""} key={moment.title}>
+                <span className="timeline-dot">{String(index + 1).padStart(2, "0")}</span>
+                <div className="moment-image">
+                  <Image src={moment.image} alt="" width={360} height={260}/>
+                </div>
+                <div>
+                  <small>{moment.season} · {moment.episode}</small>
+                  <h3>{moment.title}</h3>
+                  <p>{moment.teaser}</p>
+                  {isOpen && (
+                    <p className="spoiler-copy" id={detailsId}>
+                      <strong>Revelação:</strong> {moment.spoiler}
+                    </p>
+                  )}
+                  <div className="moment-actions">
+                    <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      aria-controls={detailsId}
+                      onClick={() => setOpen((current) => current === index ? null : index)}
+                    >
+                      {isOpen ? "Ocultar detalhes" : "Revelar momento"}
+                      <ChevronRight aria-hidden="true"/>
+                    </button>
+                    <a
+                      href={moment.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Assistir à cena “${moment.title}” no YouTube`}
+                    >
+                      <Play aria-hidden="true"/> Assistir à cena <ExternalLink aria-hidden="true"/>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+        <HorizontalControls
+          className="side-controls"
+          label="momentos"
+          atStart={atStart}
+          atEnd={atEnd}
+          onPrevious={() => move(-1)}
+          onNext={() => move(1)}
+        />
+      </div>
+    </section>
+  );
 }
 
 export function GamesSection() {

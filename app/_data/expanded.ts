@@ -1,7 +1,9 @@
+import garnetPortrait from "../../public/characters/garnet.webp";
+
 export const seriesThemes = [
   {id:"familia",number:"01",label:"Família escolhida",title:"Família é quem escolhe ficar",image:"/story-cast.webp",text:"Steven cresce cercado por pessoas muito diferentes, unidas não pela perfeição, mas pelo cuidado diário. A série transforma aventuras cósmicas em uma história sobre acolhimento, confiança e pertencimento."},
   {id:"identidade",number:"02",label:"Identidade",title:"Ser quem você é",image:"/characters/stevonnie.webp",text:"Cada personagem aprende a existir além do papel que recebeu. Escolha, expressão e liberdade importam mais do que qualquer expectativa."},
-  {id:"relacoes",number:"03",label:"Relações",title:"Equilíbrio se constrói",image:"/characters/garnet.webp",text:"As fusões mostram que relações saudáveis precisam de confiança, diálogo e consentimento. Poder sem respeito nunca é união."},
+  {id:"relacoes",number:"03",label:"Relações",title:"Equilíbrio se constrói",image:garnetPortrait,text:"As fusões mostram que relações saudáveis precisam de confiança, diálogo e consentimento. Poder sem respeito nunca é união."},
   {id:"crescimento",number:"04",label:"Amadurecimento",title:"Mudar também é coragem",image:"/characters/lapis.webp",text:"Curar não significa apagar o passado. Steven e seus amigos aprendem a reconhecer feridas, assumir escolhas e criar novos caminhos."},
 ];
 
@@ -14,19 +16,19 @@ export const games = [
 ];
 
 export const moments = [
-  { title: "O escudo de Steven", episode: "Gem Glow", season: "Temporada 1", image: "/characters/steven.webp", teaser: "O primeiro passo para compreender seu legado.", spoiler: "Steven manifesta seu escudo pela primeira vez e percebe que seus poderes respondem às emoções.", youtubeUrl:"" },
-  { title: "Uma Mulher Gigante", episode: "Giant Woman", season: "Temporada 1", image: "/characters/opal.webp", teaser: "Steven descobre o significado de uma fusão.", spoiler: "Pérola e Ametista encontram equilíbrio suficiente para formar Opal e resgatar Steven.", youtubeUrl:"https://www.youtube.com/watch?v=MnJhQyyLTY8" },
-  { title: "Mais forte que você", episode: "Jail Break", season: "Temporada 1", image: "/characters/garnet.webp", teaser: "Uma verdade sobre Garnet muda a série.", spoiler: "A identidade de Garnet como a fusão amorosa entre Rubi e Safira é finalmente revelada.", youtubeUrl:"https://www.youtube.com/watch?v=coOK-eZDm4k" },
-  { title: "A nova Crystal Gem", episode: "The New Crystal Gems", season: "Temporada 4", image: "/characters/peridot.webp", teaser: "Novas amizades assumem uma grande responsabilidade.", spoiler: "Connie, Peridot, Lápis e Pumpkin tentam proteger Beach City enquanto o grupo principal está fora.", youtubeUrl:"" },
-  { title: "A verdade de Rose", episode: "A Single Pale Rose", season: "Temporada 5", image: "/characters/pink.webp", teaser: "Memórias escondidas reorganizam toda a história.", spoiler: "Steven descobre a ligação definitiva entre Rose Quartz e Pink Diamond.", youtubeUrl:"" },
+  { title: "O escudo de Steven", episode: "Gem Glow", season: "Temporada 1", image: "/characters/steven.webp", teaser: "O primeiro passo para compreender seu legado.", spoiler: "Steven manifesta seu escudo pela primeira vez e percebe que seus poderes respondem às emoções.", youtubeUrl:"https://www.youtube.com/watch?v=IiyHHQaehxE" },
+  { title: "Uma Mulher Gigante", episode: "Giant Woman", season: "Temporada 1", image: "/characters/opal.webp", teaser: "Steven descobre o significado de uma fusão.", spoiler: "Pérola e Ametista encontram equilíbrio suficiente para formar Opal e resgatar Steven.", youtubeUrl:"https://www.youtube.com/watch?v=JD53UqgdMZU" },
+  { title: "Mais forte que você", episode: "Jail Break", season: "Temporada 1", image: garnetPortrait, teaser: "Uma verdade sobre Garnet muda a série.", spoiler: "A identidade de Garnet como a fusão amorosa entre Rubi e Safira é finalmente revelada.", youtubeUrl:"https://www.youtube.com/watch?v=coOK-eZDm4k" },
+  { title: "A nova Crystal Gem", episode: "The New Crystal Gems", season: "Temporada 4", image: "/characters/peridot.webp", teaser: "Novas amizades assumem uma grande responsabilidade.", spoiler: "Connie, Peridot, Lápis e Pumpkin tentam proteger Beach City enquanto o grupo principal está fora.", youtubeUrl:"https://www.youtube.com/watch?v=w54X-bZ-fck" },
+  { title: "A verdade de Rose", episode: "A Single Pale Rose", season: "Temporada 5", image: "/characters/pink.webp", teaser: "Memórias escondidas reorganizam toda a história.", spoiler: "Steven descobre a ligação definitiva entre Rose Quartz e Pink Diamond.", youtubeUrl:"https://www.youtube.com/watch?v=Sy0JicM8l8A" },
   { title: "Reunidos", episode: "Reunited", season: "Temporada 5", image: "/characters/sapphire.webp", teaser: "Uma celebração se transforma em confronto cósmico.", spoiler: "O casamento de Rubi e Safira antecede a chegada das Diamantes à Terra.", youtubeUrl:"https://www.youtube.com/watch?v=Tfv8CaPINWw" },
-  { title: "Lars das Estrelas", episode: "Lars of the Stars", season: "Temporada 5", image: "/characters/lars.webp", teaser: "Um morador de Beach City encontra coragem no espaço.", spoiler: "Lars lidera as Off Colors e assume uma vida de capitão rebelde.", youtubeUrl:"" },
-  { title: "Mude de ideia", episode: "Change Your Mind", season: "Temporada 5", image: "/expanded/obsidian.webp", teaser: "O arco central chega a uma resolução transformadora.", spoiler: "Steven confronta a ordem das Diamantes, reúne as Gems e redefine o futuro de Homeworld.", youtubeUrl:"" },
+  { title: "Lars das Estrelas", episode: "Lars of the Stars", season: "Temporada 5", image: "/characters/lars.webp", teaser: "Um morador de Beach City encontra coragem no espaço.", spoiler: "Lars lidera as Off Colors e assume uma vida de capitão rebelde.", youtubeUrl:"https://www.youtube.com/watch?v=hSMLem154nM" },
+  { title: "Mude de ideia", episode: "Change Your Mind", season: "Temporada 5", image: "/expanded/obsidian.webp", teaser: "O arco central chega a uma resolução transformadora.", spoiler: "Steven confronta a ordem das Diamantes, reúne as Gems e redefine o futuro de Homeworld.", youtubeUrl:"https://www.youtube.com/watch?v=MhVChKHGoxs" },
 ];
 
 export const fusionGuide = [
-  { name:"Garnet", parts:"Rubi + Safira", episode:"Gem Glow", season:"T1", image:"/characters/garnet.webp", text:"Amor, confiança e escolha em uma fusão estável; sua natureza de fusão é revelada em Jail Break.", youtubeId:"coOK-eZDm4k", videoLanguage:"Inglês" },
-  { name:"Opal", parts:"Pérola + Ametista", episode:"Giant Woman", season:"T1", image:"/characters/opal.webp", text:"Precisão e espontaneidade em equilíbrio.", youtubeId:"MnJhQyyLTY8", videoLanguage:"Português (Brasil)" },
+  { name:"Garnet", parts:"Rubi + Safira", episode:"Gem Glow", season:"T1", image:garnetPortrait, text:"Amor, confiança e escolha em uma fusão estável; sua natureza de fusão é revelada em Jail Break.", youtubeId:"coOK-eZDm4k", videoLanguage:"Inglês" },
+  { name:"Opal", parts:"Pérola + Ametista", episode:"Giant Woman", season:"T1", image:"/characters/opal.webp", text:"Precisão e espontaneidade em equilíbrio.", youtubeId:"JD53UqgdMZU", videoLanguage:"Inglês" },
   { name:"Sugilite", parts:"Garnet + Ametista", episode:"Coach Steven", season:"T1", image:"/characters/sugilite.webp", text:"Força e intensidade difíceis de conter." },
   { name:"Sardonyx", parts:"Garnet + Pérola", episode:"Cry for Help", season:"T2", image:"/characters/sardonyx.webp", text:"Elegância teatral e inteligência técnica.", youtubeId:"aUC6ad-lO4g", videoLanguage:"Português (Brasil)" },
   { name:"Alexandrite", parts:"Garnet + Pérola + Ametista", episode:"Fusion Cuisine", season:"T1", image:"/characters/alexandrite.webp", text:"A união coletiva das Crystal Gems clássicas." },
@@ -46,7 +48,7 @@ export const fusionGuide = [
 
 export const fusionVideos = [
   {id:"coOK-eZDm4k",title:"Steven descobre que Garnet é uma fusão",episode:"Jail Break · oficial em inglês",text:"O momento exato em que Rubi e Safira se reencontram, formam Garnet e revelam sua identidade a Steven."},
-  {id:"MnJhQyyLTY8",title:"Pérola e Ametista formam Opal",episode:"Giant Woman · oficial em português",text:"A canção e o momento em que as duas Crystal Gems encontram equilíbrio para formar Opal."},
+  {id:"JD53UqgdMZU",title:"Pérola e Ametista formam Opal",episode:"Giant Woman · cena em inglês",text:"A canção e o momento em que as duas Crystal Gems encontram equilíbrio para formar Opal."},
   {id:"aUC6ad-lO4g",title:"Garnet e Pérola formam Sardonyx",episode:"Cry for Help · oficial em português",text:"A entrada teatral de Sardonyx em um clipe do canal oficial Steven Universo Brasil."},
   {id:"TRX1WSmV-PI",title:"Jasper e Lápis formam Malachite",episode:"Jail Break · oficial em português",text:"O surgimento de Malachite e o início de uma relação marcada por controle e conflito."},
   {id:"aNqERAk81Fo",title:"Steven e Ametista formam Smoky Quartz",episode:"Earthlings · oficial em português",text:"A autoaceitação compartilhada dá forma a Smoky Quartz."},

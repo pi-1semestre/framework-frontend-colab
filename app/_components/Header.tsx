@@ -111,8 +111,7 @@ export function Header() {
       }
 
       const content = section.querySelector<HTMLElement>(".section-heading, .story-copy, .quiz-card, .rebecca-layout") ?? section;
-      const headerBottom = headerRef.current?.getBoundingClientRect().bottom ?? 88;
-      const top = content.getBoundingClientRect().top + window.scrollY - headerBottom - 24;
+      const top = Math.round(content.getBoundingClientRect().top + window.scrollY - 24);
 
       if (window.location.hash !== href) window.history.pushState(null, "", href);
       window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });

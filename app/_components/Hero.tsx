@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
+import garnetPortrait from "../../public/characters/garnet.webp";
 
 const heroCharacters = [
-  { name: "Garnet", src: "/characters/garnet.webp", className: "figure-garnet" },
+  { name: "Garnet", src: garnetPortrait, className: "figure-garnet" },
   { name: "Pérola", src: "/characters/pearl.webp", className: "figure-pearl" },
   { name: "Ametista", src: "/characters/amethyst.webp", className: "figure-amethyst" },
   { name: "Steven", src: "/characters/steven.webp", className: "figure-steven" },
@@ -15,7 +16,15 @@ export function Hero() {
 
       <div className="hero-copy reveal">
         <span className="eyebrow">
-          <Sparkles size={14} /> UMA AVENTURA EXTRAORDINÁRIA
+          <Image
+            className="hero-eyebrow-gem"
+            src="/brand-gem.png"
+            alt=""
+            width={28}
+            height={28}
+            sizes="22px"
+          />
+          UMA AVENTURA EXTRAORDINÁRIA
         </span>
         <h1>
           <span>STEVEN</span>
@@ -49,7 +58,9 @@ export function Hero() {
                 width={700}
                 height={850}
                 sizes="(max-width: 520px) 42vw, (max-width: 800px) 38vw, 18vw"
-                preload={character.name === "Steven"}
+                loading="eager"
+                fetchPriority={character.name === "Steven" ? "high" : "auto"}
+                draggable={false}
               />
             </figure>
           ))}

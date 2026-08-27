@@ -21,9 +21,12 @@ export const metadata: Metadata = {
     description: "Explore um universo de histórias, Gems e conexões",
     type: "website",
     locale: "pt_BR",
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Steven Universo | Portal Interativo" }],
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: {
+    card: "summary",
+    title: "Steven Universo | Portal Interativo",
+    description: "Explore um universo de histórias, Gems e conexões",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
