@@ -1,6 +1,7 @@
 "use client";
 
-import { ChevronDown, Menu, Sparkles, X } from "lucide-react";
+import Image from "next/image";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const primaryLinks = [
@@ -30,7 +31,14 @@ export function Logo({ footer = false }: { footer?: boolean }) {
       href="#inicio"
       aria-label="Steven Universo — início"
     >
-      <Sparkles />
+      <Image
+        className="brand-icon"
+        src="/brand-gem.png"
+        alt=""
+        width={64}
+        height={64}
+        sizes="52px"
+      />
       <span>
         <strong>STEVEN</strong>
         <small>UNIVERSO</small>

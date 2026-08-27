@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Steven Universo — Portal Interativo",
   description: "Explore personagens, história, lugares, fusões, jogos, músicas, curiosidades e a obra de Rebecca Sugar.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://steven-universo-next.vercel.app"),
   openGraph: {
     title: "Steven Universo — Portal Interativo",
     description: "Explore um universo de histórias, Gems e conexões",

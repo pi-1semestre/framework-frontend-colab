@@ -2,8 +2,34 @@
 
 import { BookOpen, Gem, Heart, Info, Sparkles, Swords, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { Character, characterFilters, characters } from "../data/characters";
+import { Character, characterFilters, characters } from "../_data/characters";
+import { HorizontalControls } from "./HorizontalControls";
 import { Portrait } from "./Portrait";
+import { useHorizontalScroll } from "./useHorizontalScroll";
+
+function CharacterRow({ items, row, onSelect }: { items: Character[]; row: number; onSelect: (character: Character) => void }) {
+  const { trackRef, atStart, atEnd, move } = useHorizontalScroll<HTMLDivElement>();
+
+  return (
+    <div className="horizontal-carousel-frame character-row-frame">
+      <div className="character-row" ref={trackRef} tabIndex={0} aria-label={`Linha ${row} de personagens`}>
+        {items.map((character) => (
+          <article className="character-card character-card-direct" key={character.id} style={{ "--accent": character.color } as React.CSSProperties}>
+            <div className="character-image"><Portrait portrait={character.portrait} name={character.name}/></div>
+            <div className="category-list" aria-label={`Categorias de ${character.name}`}>
+              {character.categories.map((category) => <span className="category-pill" key={category}>{category}</span>)}
+            </div>
+            <h3>{character.name}</h3>
+            <p>{character.description}</p>
+            <div className="character-essentials"><span><small>{character.gem !== "Não possui Gem" ? "GEM" : "DESTAQUE"}</small>{character.gem !== "Não possui Gem" ? character.gem : character.weapon}</span></div>
+            <button className="character-details-trigger" type="button" onClick={() => onSelect(character)} aria-label={`Ver perfil completo de ${character.name}`}><Info/> Ver perfil completo</button>
+          </article>
+        ))}
+      </div>
+      <HorizontalControls className="side-controls" label={`personagens da linha ${row}`} atStart={atStart} atEnd={atEnd} onPrevious={() => move(-1)} onNext={() => move(1)} />
+    </div>
+  );
+}
 
 export function CharacterExplorer() {
   const [filter, setFilter] = useState<(typeof characterFilters)[number]>("Todos");
@@ -12,6 +38,10 @@ export function CharacterExplorer() {
     () => filter === "Todos" ? characters : characters.filter((item) => item.categories.includes(filter)),
     [filter],
   );
+  const rows = useMemo(() => {
+    const rowCount = Math.min(3, visible.length);
+    return Array.from({ length: rowCount }, (_, row) => visible.filter((_, index) => index % rowCount === row));
+  }, [visible]);
 
   useEffect(() => {
     if (!selected) return;
@@ -41,21 +71,10 @@ export function CharacterExplorer() {
           <button type="button" className={filter === item ? "active" : ""} aria-pressed={filter === item} key={item} onClick={() => setFilter(item)}>{item}</button>
         ))}
       </div>
-      <p className="horizontal-hint">Deslize para o lado para conhecer o elenco <span aria-hidden="true">→</span></p>
+      <p className="horizontal-hint">Três linhas de personagens — deslize para explorar todo o elenco <span aria-hidden="true">→</span></p>
 
-      <div className="character-grid">
-        {visible.map((character) => (
-          <article className="character-card character-card-direct" key={character.id} style={{ "--accent": character.color } as React.CSSProperties}>
-            <div className="character-image"><Portrait portrait={character.portrait} name={character.name}/></div>
-            <div className="category-list" aria-label={`Categorias de ${character.name}`}>
-              {character.categories.map((category) => <span className="category-pill" key={category}>{category}</span>)}
-            </div>
-            <h3>{character.name}</h3>
-            <p>{character.description}</p>
-            <div className="character-essentials"><span><small>{character.gem !== "Não possui Gem" ? "GEM" : "DESTAQUE"}</small>{character.gem !== "Não possui Gem" ? character.gem : character.weapon}</span></div>
-            <button className="character-details-trigger" type="button" onClick={() => setSelected(character)} aria-label={`Ver perfil completo de ${character.name}`}><Info/> Ver perfil completo</button>
-          </article>
-        ))}
+      <div className="character-rows">
+        {rows.map((items, index) => <CharacterRow key={`${filter}-${index}`} items={items} row={index + 1} onSelect={setSelected} />)}
       </div>
 
       {selected && (

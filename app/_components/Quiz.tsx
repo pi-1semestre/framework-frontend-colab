@@ -2,7 +2,7 @@
 
 import { ArrowRight, CheckCircle2, RotateCcw, Sparkles, XCircle } from "lucide-react";
 import { useState } from "react";
-import { triviaQuestions } from "../data/expanded";
+import { triviaQuestions } from "../_data/expanded";
 
 const shuffled = () => [...triviaQuestions].sort(() => Math.random() - .5).slice(0, 8);
 

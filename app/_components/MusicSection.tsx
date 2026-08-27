@@ -1,5 +1,5 @@
 import { ExternalLink, Headphones, Play } from "lucide-react";
-import { songs } from "../data/songs";
+import { songs } from "../_data/songs";
 import { Portrait } from "./Portrait";
 
 export function MusicSection() {
