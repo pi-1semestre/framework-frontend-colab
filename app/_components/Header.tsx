@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import type { MouseEvent as ReactMouseEvent } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const primaryLinks = [
   ["Início", "#inicio"],
@@ -95,24 +95,52 @@ export function Header() {
     };
   }, [open, moreOpen]);
 
-  const closeMenus = () => {
+  const scrollToSection = useCallback((href: string) => {
     setOpen(false);
     setMoreOpen(false);
-  };
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const section = document.querySelector<HTMLElement>(href);
+      if (!section) return;
+
+      if (href === "#inicio") {
+        window.history.pushState(null, "", href);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setActive(href);
+        return;
+      }
+
+      const content = section.querySelector<HTMLElement>(".section-heading, .story-copy, .quiz-card, .rebecca-layout") ?? section;
+      const headerBottom = headerRef.current?.getBoundingClientRect().bottom ?? 88;
+      const top = content.getBoundingClientRect().top + window.scrollY - headerBottom - 24;
+
+      if (window.location.hash !== href) window.history.pushState(null, "", href);
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+      setActive(href);
+    }));
+  }, []);
 
   const navigateTo = (event: ReactMouseEvent<HTMLAnchorElement>, href: string) => {
     event.preventDefault();
-    closeMenus();
-
-    const target = document.querySelector<HTMLElement>(href);
-    if (!target) return;
-
-    const headerBottom = headerRef.current?.getBoundingClientRect().bottom ?? 88;
-    const top = target.getBoundingClientRect().top + window.scrollY - headerBottom - 24;
-    window.history.pushState(null, "", href);
-    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
-    setActive(href);
+    scrollToSection(href);
   };
+
+  useEffect(() => {
+    const navigateInternalLink = (event: MouseEvent) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (!(event.target instanceof Element)) return;
+
+      const anchor = event.target.closest<HTMLAnchorElement>('a[href^="#"]');
+      const href = anchor?.getAttribute("href");
+      if (!href || href === "#") return;
+
+      event.preventDefault();
+      scrollToSection(href);
+    };
+
+    document.addEventListener("click", navigateInternalLink);
+    return () => document.removeEventListener("click", navigateInternalLink);
+  }, [scrollToSection]);
 
   const secondaryActive = secondaryLinks.some(([, href]) => href === active);
 

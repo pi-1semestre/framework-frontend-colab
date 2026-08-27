@@ -765,3 +765,12 @@ main section[id]{scroll-margin-top:112px!important}
 .site-shell :where(a,button){text-decoration:none}
 .site-shell :where(a,button):active{opacity:.78}
 .side-controls>button:active:not(:disabled){transform:translateY(-50%) scale(.94)!important}
+
+/* Um único offset: os links internos miram o cabeçalho visível da seção. */
+html{scroll-padding-top:0!important}
+.site-shell{overflow-x:clip!important;overflow-y:visible!important}
+main section[id]{scroll-margin-top:24px!important}
+
+@media(max-width:700px){
+  main section[id]{scroll-margin-top:20px!important}
+}
