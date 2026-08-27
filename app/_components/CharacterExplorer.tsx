@@ -39,7 +39,7 @@ export function CharacterExplorer() {
     [filter],
   );
   const rows = useMemo(() => {
-    const rowCount = Math.min(3, visible.length);
+    const rowCount = visible.length > 18 ? 3 : visible.length > 8 ? 2 : 1;
     return Array.from({ length: rowCount }, (_, row) => visible.filter((_, index) => index % rowCount === row));
   }, [visible]);
 

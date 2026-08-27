@@ -760,3 +760,8 @@ main section[id]{scroll-margin-top:112px!important}
   .side-controls>button:first-child{left:3px}
   .side-controls>button:last-child{right:3px}
 }
+
+/* Feedback de clique sem deslocamento e sem sublinhado residual. */
+.site-shell :where(a,button){text-decoration:none}
+.site-shell :where(a,button):active{opacity:.78}
+.side-controls>button:active:not(:disabled){transform:translateY(-50%) scale(.94)!important}

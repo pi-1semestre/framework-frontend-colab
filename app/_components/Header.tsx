@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
+import type { MouseEvent as ReactMouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 
 const primaryLinks = [
@@ -24,11 +25,12 @@ const secondaryLinks = [
 
 const allLinks = [...primaryLinks, ...secondaryLinks];
 
-export function Logo({ footer = false }: { footer?: boolean }) {
+export function Logo({ footer = false, onNavigate }: { footer?: boolean; onNavigate?: (event: ReactMouseEvent<HTMLAnchorElement>, href: string) => void }) {
   return (
     <a
       className={`brand ${footer ? "footer-brand" : ""}`}
       href="#inicio"
+      onClick={onNavigate ? (event) => onNavigate(event, "#inicio") : undefined}
       aria-label="Steven Universo — início"
     >
       <Image
@@ -98,11 +100,25 @@ export function Header() {
     setMoreOpen(false);
   };
 
+  const navigateTo = (event: ReactMouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    closeMenus();
+
+    const target = document.querySelector<HTMLElement>(href);
+    if (!target) return;
+
+    const headerBottom = headerRef.current?.getBoundingClientRect().bottom ?? 88;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerBottom - 24;
+    window.history.pushState(null, "", href);
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+    setActive(href);
+  };
+
   const secondaryActive = secondaryLinks.some(([, href]) => href === active);
 
   return (
     <header className="site-header" ref={headerRef}>
-      <Logo />
+      <Logo onNavigate={navigateTo} />
 
       <nav
         id="primary-navigation"
@@ -115,7 +131,7 @@ export function Header() {
             className={active === href ? "active" : ""}
             aria-current={active === href ? "location" : undefined}
             key={href}
-            onClick={closeMenus}
+            onClick={(event) => navigateTo(event, href)}
           >
             {label}
           </a>
@@ -141,7 +157,7 @@ export function Header() {
                 className={active === href ? "active" : ""}
                 aria-current={active === href ? "location" : undefined}
                 key={href}
-                onClick={closeMenus}
+                onClick={(event) => navigateTo(event, href)}
               >
                 {label}
               </a>
