@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, Heart, Shield, Star } from "lucide-react";
-import storyArt from "../../public/crystal-gems-group-v2.png";
+import storyArt from "../../public/artwork/crystal-gems-group.png";
 
 export function StorySection() {
   return <section className="story-section section" id="historia">

@@ -5,7 +5,7 @@ export function Portrait({ portrait, name, className = "" }: { portrait: string;
   const src = portrait === "garnet"
     ? garnetPortrait
     : portrait === "lion"
-      ? "/expanded/lion.webp"
+      ? "/characters/lion.webp"
       : `/characters/${portrait}.webp`;
   return (
     <span className={`portrait portrait-${portrait} ${className}`}>

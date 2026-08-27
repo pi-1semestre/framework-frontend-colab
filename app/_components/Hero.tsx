@@ -18,7 +18,7 @@ export function Hero() {
         <span className="eyebrow">
           <Image
             className="hero-eyebrow-gem"
-            src="/brand-gem.png"
+            src="/icon.png"
             alt=""
             width={28}
             height={28}

@@ -23,6 +23,10 @@ Abra `http://localhost:3000`.
 - `app/`: rotas, layout e estilos globais.
 - `app/_components/`: componentes internos da página.
 - `app/_data/`: conteúdo tipado usado pelos componentes.
-- `public/`: imagens e arquivos públicos.
+- `public/artwork/`: artes de destaque e grupos.
+- `public/characters/`: retratos de personagens.
+- `public/fusions/`: artes exclusivas das fusões.
+- `public/games/`: capas dos jogos.
+- `public/people/`: imagens de pessoas reais.
 
 O projeto usa somente Next.js com App Router, React e TypeScript.

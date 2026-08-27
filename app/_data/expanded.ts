@@ -1,7 +1,7 @@
 import garnetPortrait from "../../public/characters/garnet.webp";
 
 export const seriesThemes = [
-  {id:"familia",number:"01",label:"Família escolhida",title:"Família é quem escolhe ficar",image:"/story-cast.webp",text:"Steven cresce cercado por pessoas muito diferentes, unidas não pela perfeição, mas pelo cuidado diário. A série transforma aventuras cósmicas em uma história sobre acolhimento, confiança e pertencimento."},
+  {id:"familia",number:"01",label:"Família escolhida",title:"Família é quem escolhe ficar",image:"/artwork/family-group.webp",text:"Steven cresce cercado por pessoas muito diferentes, unidas não pela perfeição, mas pelo cuidado diário. A série transforma aventuras cósmicas em uma história sobre acolhimento, confiança e pertencimento."},
   {id:"identidade",number:"02",label:"Identidade",title:"Ser quem você é",image:"/characters/stevonnie.webp",text:"Cada personagem aprende a existir além do papel que recebeu. Escolha, expressão e liberdade importam mais do que qualquer expectativa."},
   {id:"relacoes",number:"03",label:"Relações",title:"Equilíbrio se constrói",image:garnetPortrait,text:"As fusões mostram que relações saudáveis precisam de confiança, diálogo e consentimento. Poder sem respeito nunca é união."},
   {id:"crescimento",number:"04",label:"Amadurecimento",title:"Mudar também é coragem",image:"/characters/lapis.webp",text:"Curar não significa apagar o passado. Steven e seus amigos aprendem a reconhecer feridas, assumir escolhas e criar novos caminhos."},
@@ -23,7 +23,7 @@ export const moments = [
   { title: "A verdade de Rose", episode: "A Single Pale Rose", season: "Temporada 5", image: "/characters/pink.webp", teaser: "Memórias escondidas reorganizam toda a história.", spoiler: "Steven descobre a ligação definitiva entre Rose Quartz e Pink Diamond.", youtubeUrl:"https://www.youtube.com/watch?v=Sy0JicM8l8A" },
   { title: "Reunidos", episode: "Reunited", season: "Temporada 5", image: "/characters/sapphire.webp", teaser: "Uma celebração se transforma em confronto cósmico.", spoiler: "O casamento de Rubi e Safira antecede a chegada das Diamantes à Terra.", youtubeUrl:"https://www.youtube.com/watch?v=Tfv8CaPINWw" },
   { title: "Lars das Estrelas", episode: "Lars of the Stars", season: "Temporada 5", image: "/characters/lars.webp", teaser: "Um morador de Beach City encontra coragem no espaço.", spoiler: "Lars lidera as Off Colors e assume uma vida de capitão rebelde.", youtubeUrl:"https://www.youtube.com/watch?v=hSMLem154nM" },
-  { title: "Mude de ideia", episode: "Change Your Mind", season: "Temporada 5", image: "/expanded/obsidian.webp", teaser: "O arco central chega a uma resolução transformadora.", spoiler: "Steven confronta a ordem das Diamantes, reúne as Gems e redefine o futuro de Homeworld.", youtubeUrl:"https://www.youtube.com/watch?v=MhVChKHGoxs" },
+  { title: "Mude de ideia", episode: "Change Your Mind", season: "Temporada 5", image: "/fusions/obsidian.webp", teaser: "O arco central chega a uma resolução transformadora.", spoiler: "Steven confronta a ordem das Diamantes, reúne as Gems e redefine o futuro de Homeworld.", youtubeUrl:"https://www.youtube.com/watch?v=MhVChKHGoxs" },
 ];
 
 export const fusionGuide = [
@@ -35,15 +35,15 @@ export const fusionGuide = [
   { name:"Stevonnie", parts:"Steven + Connie", episode:"Alone Together", season:"T1", image:"/characters/stevonnie.webp", text:"Confiança, descoberta e parceria.", youtubeId:"luhO9HPUClk", videoLanguage:"Inglês" },
   { name:"Malachite", parts:"Jasper + Lápis", episode:"Jail Break", season:"T1", image:"/characters/malachite.webp", text:"Uma relação instável marcada por controle e dor.", youtubeId:"TRX1WSmV-PI", videoLanguage:"Português (Brasil)" },
   { name:"Smoky Quartz", parts:"Steven + Ametista", episode:"Earthlings", season:"T3", image:"/characters/smoky.webp", text:"Humor e autoaceitação transformados em força.", youtubeId:"aNqERAk81Fo", videoLanguage:"Português (Brasil)" },
-  { name:"Rainbow Quartz", parts:"Rose + Pérola", episode:"We Need to Talk", season:"T2", image:"/expanded/rainbow.webp", text:"Uma fusão graciosa ligada ao passado de Greg." },
-  { name:"Rainbow Quartz 2.0", parts:"Steven + Pérola", episode:"Change Your Mind", season:"T5", image:"/expanded/rainbow-20.webp", text:"Leveza, cuidado e criatividade em movimento." },
-  { name:"Sunstone", parts:"Steven + Garnet", episode:"Change Your Mind", season:"T5", image:"/expanded/sunstone.webp", text:"Entusiasmo, segurança e força protetora.", youtubeId:"G2PPLVFodAg", videoLanguage:"Português (Brasil)" },
-  { name:"Obsidian", parts:"Steven + Garnet + Pérola + Ametista", episode:"Change Your Mind", season:"T5", image:"/expanded/obsidian.webp", text:"A forma colossal das Crystal Gems reunidas.", youtubeId:"-dZ254gOnZA", videoLanguage:"Inglês" },
-  { name:"Steg", parts:"Steven + Greg", episode:"Steven Universe: The Movie", season:"Filme", image:"/expanded/steg.webp", text:"A conexão musical entre pai e filho." },
-  { name:"Mega Pearl", parts:"Pérola + Volleyball", episode:"Volleyball", season:"Future", image:"/expanded/mega-pearl.webp", text:"Compreensão compartilhada de feridas antigas.", youtubeId:"xAqlyWsPYy4", videoLanguage:"Inglês" },
-  { name:"Bluebird Azurite", parts:"Aquamarine + Eyeball", episode:"Bluebird", season:"Future", image:"/expanded/bluebird.webp", text:"Uma aliança construída pelo ressentimento." },
-  { name:"Fluorite", parts:"Seis Gems não identificadas individualmente", episode:"Off Colors", season:"T5", image:"/expanded/fluorite.webp", text:"Uma fusão longa, paciente e livre da ordem de Homeworld." },
-  { name:"Rhodonite", parts:"Uma Rubi + uma Pérola", episode:"Off Colors", season:"T5", image:"/expanded/rhodonite.webp", text:"Uma relação que escolheu existir apesar das regras." },
+  { name:"Rainbow Quartz", parts:"Rose + Pérola", episode:"We Need to Talk", season:"T2", image:"/fusions/rainbow.webp", text:"Uma fusão graciosa ligada ao passado de Greg." },
+  { name:"Rainbow Quartz 2.0", parts:"Steven + Pérola", episode:"Change Your Mind", season:"T5", image:"/fusions/rainbow-20.webp", text:"Leveza, cuidado e criatividade em movimento." },
+  { name:"Sunstone", parts:"Steven + Garnet", episode:"Change Your Mind", season:"T5", image:"/fusions/sunstone.webp", text:"Entusiasmo, segurança e força protetora.", youtubeId:"G2PPLVFodAg", videoLanguage:"Português (Brasil)" },
+  { name:"Obsidian", parts:"Steven + Garnet + Pérola + Ametista", episode:"Change Your Mind", season:"T5", image:"/fusions/obsidian.webp", text:"A forma colossal das Crystal Gems reunidas.", youtubeId:"-dZ254gOnZA", videoLanguage:"Inglês" },
+  { name:"Steg", parts:"Steven + Greg", episode:"Steven Universe: The Movie", season:"Filme", image:"/fusions/steg.webp", text:"A conexão musical entre pai e filho." },
+  { name:"Mega Pearl", parts:"Pérola + Volleyball", episode:"Volleyball", season:"Future", image:"/fusions/mega-pearl.webp", text:"Compreensão compartilhada de feridas antigas.", youtubeId:"xAqlyWsPYy4", videoLanguage:"Inglês" },
+  { name:"Bluebird Azurite", parts:"Aquamarine + Eyeball", episode:"Bluebird", season:"Future", image:"/fusions/bluebird.webp", text:"Uma aliança construída pelo ressentimento." },
+  { name:"Fluorite", parts:"Seis Gems não identificadas individualmente", episode:"Off Colors", season:"T5", image:"/fusions/fluorite.webp", text:"Uma fusão longa, paciente e livre da ordem de Homeworld." },
+  { name:"Rhodonite", parts:"Uma Rubi + uma Pérola", episode:"Off Colors", season:"T5", image:"/fusions/rhodonite.webp", text:"Uma relação que escolheu existir apesar das regras." },
 ];
 
 export const fusionVideos = [

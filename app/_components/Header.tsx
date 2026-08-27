@@ -35,7 +35,7 @@ export function Logo({ footer = false, onNavigate }: { footer?: boolean; onNavig
     >
       <Image
         className="brand-icon"
-        src="/brand-gem.png"
+        src="/icon.png"
         alt=""
         width={64}
         height={64}
