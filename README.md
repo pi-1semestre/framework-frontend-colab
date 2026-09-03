@@ -1,52 +1,57 @@
-# Steven Universo | Portal Interativo
+<div align="center">
+  <img src="./app/icon.png" width="96" alt="Gema rosa de Steven Universo" />
 
-Portal de fã responsivo e interativo dedicado ao universo de *Steven Universe*. O projeto reúne história, personagens, fusões, momentos marcantes, jogos, músicas, curiosidades e informações sobre Rebecca Sugar em uma experiência visual inspirada na série.
+  <h1>Steven Universo</h1>
 
-<p align="center">
-  <a href="https://steven-universo-next.vercel.app"><strong>Acessar o projeto na Vercel</strong></a>
-  ·
-  <a href="https://github.com/pi-1semestre/framework-frontend-colab">Ver repositório</a>
-</p>
+  <p><strong>Um portal interativo para explorar histórias, personagens e conexões.</strong></p>
+  <p>Conheça Beach City, as Crystal Gems e tudo o que torna esse universo tão especial.</p>
 
-![Crystal Gems reunidas](./public/artwork/crystal-gems-group.png)
+  <p>
+    <a href="https://steven-universo-next.vercel.app">
+      <img src="https://img.shields.io/badge/ACESSAR_O_PORTAL-ff4f9a?style=for-the-badge&logo=vercel&logoColor=white" alt="Acessar o portal na Vercel" />
+    </a>
+    <a href="https://github.com/pi-1semestre/framework-frontend-colab">
+      <img src="https://img.shields.io/badge/REPOSITORIO-302047?style=for-the-badge&logo=github&logoColor=white" alt="Abrir o repositório no GitHub" />
+    </a>
+  </p>
+</div>
 
-## Sobre o projeto
+<br />
 
-O portal foi desenvolvido de forma colaborativa para apresentar o universo de *Steven Universe* de maneira organizada, acessível e envolvente. Além do conteúdo informativo, a página oferece filtros, carrosséis, modais, vídeos, um player visual de músicas e um quiz com perguntas variadas.
+<img src="./public/artwork/crystal-gems-group.png" width="100%" alt="Steven e as Crystal Gems reunidos" />
 
-O conteúdo está distribuído em uma página única, com navegação por seções e layout adaptado para computadores, tablets e celulares.
+## ✦ Sobre o portal
 
-## Funcionalidades
+O **Steven Universo** é um projeto colaborativo que reúne informações sobre a animação em uma experiência visual, responsiva e interativa. Todo o conteúdo está organizado em uma única página, com navegação simples entre as seções.
 
-- apresentação da história e da ordem cronológica da franquia;
-- explorador de personagens com categorias e perfis detalhados;
-- guia de temas, lugares e conceitos do universo;
-- atlas de fusões com integrantes, aparições e vídeos;
-- linha do tempo de momentos marcantes com controle de spoilers;
-- catálogo de jogos oficiais e suas plataformas;
-- seleção de músicas com player interativo e links para o YouTube;
-- curiosidades editoriais acompanhadas de fontes;
-- quiz sobre personagens, episódios, músicas e bastidores;
-- seção de prêmios e informações sobre Rebecca Sugar;
-- navegação responsiva e interações acessíveis por teclado.
+> Da história da série às músicas e curiosidades: um espaço feito por fãs para celebrar o universo criado por Rebecca Sugar.
 
-## Tecnologias
+## ✦ O que você encontra
 
-- [Next.js 16](https://nextjs.org/) com App Router;
-- [React 19](https://react.dev/);
-- [TypeScript](https://www.typescriptlang.org/);
-- [Tailwind CSS 4](https://tailwindcss.com/);
-- [Lucide React](https://lucide.dev/) para os ícones;
-- [Vercel](https://vercel.com/) para hospedagem.
+| Explore | Interaja |
+| --- | --- |
+| História e ordem da franquia | Filtros e perfis de personagens |
+| Personagens e Crystal Gems | Carrosséis de jogos e fusões |
+| Lugares, temas e fusões | Vídeos e player de músicas |
+| Jogos e momentos marcantes | Quiz com perguntas variadas |
+| Curiosidades e premiações | Controle de spoilers |
+| Vida e obra de Rebecca Sugar | Navegação adaptada para qualquer tela |
 
-## Como executar localmente
+## ✦ Acesse o projeto
 
-### Pré-requisitos
+O portal está publicado e pode ser acessado pelo endereço:
 
-- [Node.js](https://nodejs.org/) 20.9 ou superior;
-- npm, incluído na instalação do Node.js.
+### [steven-universo-next.vercel.app](https://steven-universo-next.vercel.app)
 
-### Instalação
+## ✦ Construído com Next.js
+
+O **Next.js 16**, utilizando o **App Router**, é o framework adotado no projeto. A organização das rotas, os componentes, as imagens otimizadas, as fontes e os metadados da aplicação seguem os recursos oferecidos pelo Next.js.
+
+TypeScript e CSS são utilizados como apoio para tipagem e apresentação visual. A publicação é realizada na Vercel.
+
+## ✦ Executando localmente
+
+Você precisa ter o [Node.js](https://nodejs.org/) **20.9 ou superior** instalado.
 
 ```bash
 git clone https://github.com/pi-1semestre/framework-frontend-colab.git
@@ -55,42 +60,43 @@ npm ci
 npm run dev
 ```
 
-Depois, acesse [http://localhost:3000](http://localhost:3000) no navegador.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador. Nenhuma variável de ambiente é obrigatória para executar o portal localmente.
 
-O projeto não exige variáveis de ambiente para funcionar localmente. Opcionalmente, `NEXT_PUBLIC_SITE_URL` pode ser definida para alterar a URL-base usada nos metadados da aplicação.
+### Comandos
 
-## Scripts disponíveis
-
-| Comando | Descrição |
+| Comando | Ação |
 | --- | --- |
-| `npm run dev` | Inicia o servidor de desenvolvimento. |
-| `npm run build` | Gera a versão otimizada para produção. |
-| `npm start` | Executa a versão de produção após o build. |
-| `npm run lint` | Analisa o código com o ESLint. |
-| `npm run lint:fix` | Corrige automaticamente problemas compatíveis com o ESLint. |
+| `npm run dev` | Inicia o ambiente de desenvolvimento |
+| `npm run build` | Gera a aplicação para produção |
+| `npm start` | Executa a versão de produção |
+| `npm run lint` | Verifica a qualidade do código |
+| `npm run lint:fix` | Corrige problemas identificados pelo ESLint |
 
-## Estrutura do projeto
+## ✦ Organização
 
 ```text
 app/
-├── _components/   # Componentes e seções da interface
-├── _data/         # Conteúdo tipado usado pelo portal
-├── globals.css    # Estilos globais e responsivos
-├── layout.tsx     # Layout e metadados da aplicação
-└── page.tsx       # Página principal
+├── _components/   seções e elementos da interface
+├── _data/         conteúdo utilizado pelo portal
+├── globals.css    identidade visual e responsividade
+├── layout.tsx     estrutura e metadados
+└── page.tsx       página principal
 
 public/
-├── artwork/       # Artes de destaque e grupos
-├── characters/    # Retratos dos personagens
-├── fusions/       # Imagens das fusões
-├── games/         # Capas dos jogos
-└── people/        # Fotografias de pessoas reais
+├── artwork/       artes de destaque
+├── characters/    imagens dos personagens
+├── fusions/       imagens das fusões
+├── games/         capas dos jogos
+└── people/        fotografias
 ```
 
-## Colaboração
+## ✦ Colaboração
 
-Este projeto foi construído em equipe. O histórico completo pode ser consultado na página de [contribuidores do repositório](https://github.com/pi-1semestre/framework-frontend-colab/graphs/contributors).
+O projeto foi construído em equipe. Veja os participantes e o histórico de desenvolvimento na página de [contribuidores](https://github.com/pi-1semestre/framework-frontend-colab/graphs/contributors).
 
-## Aviso legal
+---
 
-Projeto de fã, sem fins comerciais. *Steven Universe* e seus personagens pertencem aos respectivos detentores de direitos. As imagens são utilizadas com finalidade informativa e educacional.
+<p align="center">
+  Projeto de fã, sem fins comerciais.<br />
+  <em>Steven Universe</em> e seus personagens pertencem aos respectivos detentores de direitos.
+</p>
