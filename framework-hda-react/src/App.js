@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./App.css";
 import finnImg from "./assets/finn-icon.png";
 import jakeImg from "./assets/jake-icon.png";
