@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./App.css";
 import finnImg from "./assets/finn-icon.png";
 import jakeImg from "./assets/jake-icon.png";
@@ -10,41 +9,6 @@ import reiGeladoImg from "./assets/rei-gelado-icon.png";
 import lemongrabImg from "./assets/lemongrab-icon.png";
 import golbImg from "./assets/golb-icon.png";
 import pendletonImg from "./assets/pendleton.jpg";
-
-const personagens = [
-  {
-    nome: "Finn",
-    apelido: "O humano",
-    emoji: "⚔️",
-    cor: "#5cc9ee",
-    descricao:
-      "Finn é um jovem humano aventureiro que vive na Terra de Ooo. Ele é corajoso, divertido e está sempre disposto a ajudar seus amigos.",
-  },
-  {
-    nome: "Jake",
-    apelido: "O cão mágico",
-    emoji: "🐶",
-    cor: "#f5c842",
-    descricao:
-      "Jake é o melhor amigo e irmão adotivo de Finn. Seu corpo possui poderes mágicos que permitem que ele estique e transforme seu corpo.",
-  },
-  {
-    nome: "Marceline",
-    apelido: "A Rainha Vampira",
-    emoji: "🎸",
-    cor: "#b9a8e8",
-    descricao:
-      "Marceline é uma vampira roqueira que toca baixo e possui uma das histórias mais profundas e emocionantes da série.",
-  },
-  {
-    nome: "Princesa Jujuba",
-    apelido: "Princesa do Reino Doce",
-    emoji: "🍬",
-    cor: "#ff91bd",
-    descricao:
-      "A Princesa Jujuba governa o Reino Doce. Ela é extremamente inteligente e possui grande conhecimento científico.",
-  },
-];
 
 const curiosidades = [
   {
@@ -74,16 +38,6 @@ const curiosidades = [
 ];
 
 function App() {
-  const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
-
-  function mostrarPersonagem(personagem) {
-    if (personagemSelecionado === personagem.nome) {
-      setPersonagemSelecionado(null);
-    } else {
-      setPersonagemSelecionado(personagem.nome);
-    }
-  }
-
   function irPara(id) {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
