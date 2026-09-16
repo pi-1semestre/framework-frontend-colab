@@ -39,8 +39,6 @@ const curiosidades = [
 ];
 
 function App() {
-  const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
-
   function irPara(id) {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
